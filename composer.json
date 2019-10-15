@@ -25,7 +25,6 @@
 		"clickstorm/cs_seo": "^4.1",
 		"consolidation/robo": "^1",
 		"cweagans/composer-patches": "^1.6",
-		"de-swebhosting-typo3-extension/html5mediakit": "^9.0",
 		"deployer/deployer": "^6",
 		"fluidtypo3/vhs": "^5.2",
 		"georgringer/news": "^7.3",
@@ -55,7 +54,6 @@
 		"typo3/cms-form": "^9.5",
 		"typo3/cms-frontend": "^9.5",
 		"typo3/cms-impexp": "^9.5",
-		"typo3/cms-indexed-search": "^9.5",
 		"typo3/cms-info": "^9.5",
 		"typo3/cms-install": "^9.5",
 		"typo3/cms-linkvalidator": "^9.5",
@@ -81,6 +79,11 @@
 		"squizlabs/php_codesniffer": "^3.4.0",
 		"typo3-console/php-server-command": "0.2.2",
 		"typo3/testing-framework": "4.11.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"T3Dev\\Tmpl\\" : "public_html/typo3conf/ext/tmpl/Classes"
+			}
 	},
 	"scripts": {
 		"typo3-cms-scripts": [
