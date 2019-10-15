@@ -1,0 +1,45 @@
+mod.web_layout.BackendLayouts {
+
+    1 {
+        title = One Column Page
+        icon = tmpl-backend-layout
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Content
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    2 {
+        title = Two Column Page
+        icon = tmpl-backend-layout
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Content
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

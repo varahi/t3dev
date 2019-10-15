@@ -1,0 +1,180 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+    
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .right-column {
+  	display: none;
+  }
+  .typo3-logo {
+  	position: absolute;
+  	top: 0;
+  }   
+  .topmenu {
+  	margin-left: 0;
+  }
+  
+ /* Portfolio */
+  .wmg-item {
+  	width: 100% !important;
+  	height: auto !important;
+  	max-height: auto !important;
+  	float: none;
+  	border-bottom: 1px solid #f1f1f1;
+  	margin-bottom: 20px;
+  	padding-bottom: 30px !important;
+  }
+	.wmg-thumbnail-content img {
+    vertical-align: middle;
+    width: 50% !important;
+		max-width: 50% !important;
+		height: auto !important;
+		max-height: 100% !important;
+	}
+	.wmg-thumbnail-content {
+    height: auto !important;
+    max-height: auto !important;
+    overflow: hidden;
+    width: 100%;
+	}
+	.wmg-thumbnail {
+    height: auto !important;
+    max-height: auto !important;
+    text-align: center;
+    position: relative;
+    width: 100%;
+	}		  
+  .wmg-container {
+  	
+  } 
+  .portfolio-item-description {
+  	min-height: 300px;
+  	margin-bottom: 100px;
+  }  
+  
+   
+}    
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+ /* .topmenu {
+    margin-left: 0px;
+  }
+  .logo {
+    top: 15px;
+  }
+  */
+  .page-subheader {
+   min-height: 345px;
+  }  
+  .sidemenu {
+   display: none;
+  }    
+  .last-news {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    margin: 0 auto;
+  } 
+  .typo3-logo {
+  	top: 165px;
+  }
+  .main-page .logo {
+    left: 10px;
+	} 
+  /*
+  .callback {
+   position: absolute;
+   top: 0px; 
+   left: 10px;
+   margin-left: 0;
+    display: none;
+  }
+  */
+  .typo3-neos-alignment-left {
+  	float: none;
+  }
+	.typo3-neos-nodetypes-textwithimage img {
+		width: 70%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+    
+  
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 640px) {
+	.search {
+		display: none;
+	}
+	
+	.wmg-thumbnail-content img {
+    vertical-align: middle;
+    width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		max-height: 100% !important;
+	}	
+	
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  .main-page .logo {
+    left: 0px;
+  }
+  .callback {
+    display: none;
+  }  
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {      
+}

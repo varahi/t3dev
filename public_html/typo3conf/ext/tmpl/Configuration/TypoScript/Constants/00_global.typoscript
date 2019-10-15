@@ -1,0 +1,31 @@
+#
+# Defining some general constants
+#
+
+# basic config options
+config {
+
+    language = ru
+    locale = ru_RU.UTF-8
+    sys_language_uid = 0
+    locale_all = ru_RU
+
+    navigation {
+        rootPid = 1
+        excludeUidList = 0 | -1
+        specialRange =
+    }
+
+    header {
+        logoTitle =
+        logoSmallTitle =
+        bannerTitle =
+        phone = <a href="tel:+74959691730">(495) 969-17-30</a>
+        email = info@all-power.ru
+    }
+
+}
+
+[tree.level in [3]]
+    config.navigation.specialRange = 1 | -1
+[end]

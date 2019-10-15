@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-08-19T14:48:39Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="news.layout.list_news">
+				<source><![CDATA[List News]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

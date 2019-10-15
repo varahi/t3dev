@@ -1,0 +1,91 @@
+config {
+
+    # basic language setup
+    language = {$config.language}
+    locale_all = {$config.locale}
+    sys_language_uid = {$config.sys_language_uid}
+    htmlTag_setParams = lang="{$config.language}" dir="ltr"
+    htmlTag_setParams.insertData = 1
+
+    linkVars = L
+    sys_language_mode = content_fallback
+    sys_language_overlay = 1
+
+    # page title / meta title
+    pageTitleFirst = 1
+    pageTitleSeparator = –
+    pageTitleSeparator.noTrimWrap = | | |
+
+    # new TYPO3 v9 PageTitle Handling
+    /*
+    pageTitleProviders {
+    tx_tmpl_pagetitle {
+    provider = T3Dev\Tmpl\Provider\PageTitleProvider
+    before = record
+    }
+    }
+    */
+
+    # URL setup
+    absRefPrefix = auto
+
+    # some css and js cleanups
+    removeDefaultJS = external
+    inlineStyle2TempFile = 1
+    moveJsFromHeaderToFooter = 0
+    setJS_openPic = 0
+
+    # CSS handling
+    #compressCss = 1
+    #concatenateCss = 1
+
+    # JS handling
+    #compressJs = 1
+    #concatenateJs = 1
+
+    # for browsers and proxies
+    sendCacheHeaders = 1
+
+    # disable image upscaling
+    noScaleUp = 1
+
+
+    htmlTag_stdWrap {
+        setContentToCurrent = 1
+        cObject = COA
+        cObject {
+            temp = TEXT
+            temp.addParams.class = no-js
+            temp.append = TEXT
+            temp.append.char = 10
+            temp.current = 1
+
+            10 < .temp
+            10.addParams.class = no-js ie6 ltie8 ltie9 ltie10
+            10.wrap = <!--[if lt IE 7 ]>|<![endif]-->
+
+            20 < .temp
+            20.addParams.class = no-js ie7 ltie8 ltie9 ltie10 iefix
+            20.wrap = <!--[if IE 7 ]>|<![endif]-->
+
+            30 < .temp
+            30.addParams.class = no-js ie8 ltie9 ltie10 iefix
+            30.wrap = <!--[if IE 8 ]>|<![endif]-->
+
+            40 < .temp
+            40.addParams.class = no-js ie9 ltie10
+            40.wrap = <!--[if IE 9 ]>|<![endif]-->
+
+            50 < .temp
+            50.wrap = <!--[if !(IE)]><!--> | <!--<![endif]-->
+        }
+    }
+
+
+
+}
+
+page.config.headerComment (
+  Dmitry Vasilev dmitry@t3dev.ru
+  ___________________________________
+)

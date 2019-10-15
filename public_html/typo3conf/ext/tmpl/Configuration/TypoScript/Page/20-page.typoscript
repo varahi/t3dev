@@ -1,0 +1,120 @@
+#
+# The main page object and its most basic properties
+#
+page = PAGE
+page {
+
+    typeNum = 0
+
+    # adding some helpful classes to <body>
+    bodyTagCObject = COA
+    bodyTagCObject {
+
+        wrap = <body|>
+
+        # adding an ID
+        10 = TEXT
+        10 {
+            data = TSFE:id
+            noTrimWrap = | id="page-|"|
+        }
+
+        # ...and some helpful classes
+        20 =< lib.bodytag-classes
+        20.stdWrap.noTrimWrap = | class="|"|
+
+    }
+
+    # ********************************************************************************************
+    # Layout
+    # ********************************************************************************************
+    10 = FLUIDTEMPLATE
+    10 {
+
+        templateName = TEXT
+        templateName.stdWrap {
+
+            cObject = COA
+            cObject {
+
+                10 = CASE
+                10 {
+                    key.data = levelfield:-2,backend_layout_next_level,slide
+                    key.override.field = backend_layout
+
+                    pagets__1 = TEXT
+                    pagets__1.value = OneColumn
+
+                    pagets__2 = TEXT
+                    pagets__2.value = TwoColumns
+
+                    default = TEXT
+                    default.value =
+                }
+
+            }
+
+            ifEmpty = Main
+
+        }
+
+
+        templateRootPaths {
+            10 = EXT:tmpl/Resources/Private/Pages/Templates/
+        }
+        layoutRootPaths {
+            10 = EXT:tmpl/Resources/Private/Pages/Layouts/
+        }
+        partialRootPaths {
+            10 = EXT:tmpl/Resources/Private/Pages/Partials/
+        }
+
+        variables {
+            navimain < lib.navimain
+            //searchBox < plugin.tx_indexedsearch
+
+            // Render colpos sections
+            content < styles.content.get
+            content {
+                stdWrap.wrap = <!--TYPO3SEARCH_begin-->|<!--TYPO3SEARCH_end-->
+                stdWrap.required = 1
+            }
+
+        }
+
+        /*
+        variables {
+        logo < lib.logo
+        contentHead < lib.contentHead
+        content < lib.contentMain
+        naviDachzeile < lib.naviDachzeile
+        naviMain < lib.naviMain
+        specialsRWD < lib.specialsRWD
+        subnavigation < lib.naviSub
+        breadcrumb < lib.naviBreadcrumb
+        menuMetaBottom < lib.menuMetaBottomCached
+        menuBottom < lib.menuBottomCached
+        contactslidetab < lib.contactslidetab
+        pagefunctions < lib.pagefunctions
+        mobilesubnavigation < lib.mobileNaviSub
+        footerContact < lib.footerContact
+        footerLogo < lib.footerLogo
+        }
+        */
+
+    }
+
+}
+
+
+
+#########################
+##### DEVELOPMENT - Start
+
+#[applicationContext = Development]
+#    page.includeCSS.00_style = /assets/css/style.css
+#    page.includeJS.00_main = /assets/js/main.js
+#[end]
+
+##### DEVELOPMENT - End
+#########################

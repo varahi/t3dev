@@ -1,0 +1,18 @@
+lib.logo >
+lib.logo = COA
+lib.logo {
+    wrap = <div class="typo3-logo col-md-3 col-sm-3 col-xs-12">|</div>
+    10 = IMAGE
+    10 {
+        file = EXT:tmpl/Resources/Public/Images/typo3.png
+        altText = {$config.page.header.logoTitle}
+        titleText = {$config.page.header.logoTitle}
+        file.width = 129
+        #file.height = 70
+        stdWrap.typolink.parameter =  {$config.navigation.rootPid}
+        #stdWrap.typolink.ATagParams = class=""
+        params = class="logo"
+        stdWrap.wrap = |
+        stdWrap.typolink.title = {$config.page.header.logoTitle}
+    }
+}
