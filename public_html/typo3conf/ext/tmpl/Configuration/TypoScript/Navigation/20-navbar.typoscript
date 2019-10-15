@@ -1,0 +1,83 @@
+lib.navbar = COA
+lib.navbar.wrap = <div class="navbar-collapse collapse">|</div>
+lib.navbar {
+
+    # Responsive Navbar Part 1
+    10 = TEXT
+    10 {
+        # fontawesome
+        #value = <span class="fa fa-bars"></span>
+        # glyphicon from bootstrap
+        value = <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        wrap = <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavbar">|</button></div>
+    }
+    10 >
+
+    # Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse.
+    20 = HMENU
+    #20.wrap = <div class="collapse navbar-collapse" id="mainnavbar"><ul class="nav navbar-nav">|</ul></div>
+    20.wrap = <ul class="nav navbar-nav sm">|</ul>
+    20 {
+        entryLevel = 0
+        #excludeUidList = 57
+        1 = TMENU
+        1 {
+            wrap = |
+            expAll = 1
+
+            NO = 1
+            NO.allWrap >
+            NO.wrapItemAndSub = <li>|</li>
+            CUR = 1
+            CUR < .NO
+            CUR.wrapItemAndSub = <li class="first-level active">|</li>
+            ACT = 1
+            ACT < .CUR
+
+            # Dropdown menu
+            IFSUB = 1
+            IFSUB < .NO
+            IFSUB.wrapItemAndSub = <li class="first-level">|</li>
+            #IFSUB.ATagParams = class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#"
+            IFSUB.ATagBeforeWrap = 1
+            IFSUB.stdWrap.wrap = |
+            #IFSUB.stdWrap.wrap = |<b class="caret"></b>
+            CURIFSUB = 1
+            CURIFSUB < .IFSUB
+            CURIFSUB.wrapItemAndSub = <li class="first-level active">|</li>
+            ACTIFSUB = 1
+            ACTIFSUB < .CURIFSUB
+        }
+
+
+        2 = TMENU
+        2 {
+            wrap = <ul class="dropdown-menu" role="menu">|</ul>
+            expAll = 1
+
+            NO = 1
+            NO.allWrap >
+            NO.wrapItemAndSub = <li class="normal">|</li>
+            CUR = 1
+            CUR < .NO
+            CUR.wrapItemAndSub = <li class="current">|</li>
+            ACT = 1
+            ACT < .CUR
+
+            IFUSB < .1.IFSUB
+            CURIFSUB < .1.CURIFSUB
+            ACTIFSUB < .1.ACTIFSUB
+
+            SPC = 1
+            SPC.doNotLinkIt = 1
+            SPC.doNotShowLink = 1
+            SPC.allWrap = <li class="divider"></li>
+        }
+
+        3 < .2
+        # no submenus anymore
+        3.IFSUB >
+        3.CURIFSUB >
+        3.ACTIFSUB >
+    }
+}

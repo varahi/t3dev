@@ -1,0 +1,16 @@
+<div class="page-header">
+    <div class="navbar navbar-default navbar-static-top topmenu" role="navigation">
+        <f:render partial="Navigation" arguments="{_all}" />
+        <div class="submenu-block">
+            <p>Развивай бизнес - используй TYPO3</p>
+            <div class="search">
+                <form method="POST" action="/search">
+                    <input name="search[word]" type="text" placeholder="Поиск по сайту">
+                    <input type="hidden" name="--typo3-typo3cr-viewhelpers-widget-paginateviewhelper[currentPage]" value="">
+                    <button type="submit" class="search-submit"></button>
+                </form>
+            </div>
+            <div class="search"></div>
+        </div>
+    </div>
+</div>
