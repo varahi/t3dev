@@ -1,0 +1,59 @@
+rootPageId: 1
+base: 'https://t3dev.ru'
+baseVariants:
+  -
+    base: 'http://t3dev.localhost'
+    condition: 'getenv("HOST_ENV") == "localdev"'
+languages:
+  -
+    title: Russian
+    enabled: true
+    languageId: '0'
+    base: /
+    typo3Language: de
+    locale: ru_RU.UTF-8
+    iso-639-1: ru
+    navigationTitle: Russian
+    hreflang: ru-RU
+    direction: ''
+    flag: ru
+errorHandling:
+  -
+    errorCode: '403'
+    errorHandler: Page
+    errorContentSource: '6577'
+  -
+    errorCode: '404'
+    errorHandler: Page
+    errorContentSource: '9'
+routes: {  }
+routeEnhancers:
+  NewsPlugin:
+    type: Extbase
+    extension: News
+    plugin: Pi1
+    routes:
+      -
+        routePath: '/detail/{news_title}'
+        _controller: 'News::detail'
+        _arguments:
+          news_title: news
+      -
+        routePath: '/list/{page}'
+        _controller: 'News::list'
+        _arguments:
+          page: '@widget_0/currentPage'
+    defaultController: 'News::list'
+    defaults:
+      page: '0'
+    requirements:
+      page: \d+
+    aspects:
+      news_title:
+        type: PersistedAliasMapper
+        tableName: tx_news_domain_model_news
+        routeFieldName: path_segment
+      page:
+        type: StaticRangeMapper
+        start: '1'
+        end: '100'
