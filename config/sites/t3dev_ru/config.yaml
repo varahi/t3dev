@@ -1,9 +1,20 @@
-rootPageId: 1
-base: 'https://t3dev.ru'
+base: '/'
 baseVariants:
+#  -
+#    base: 'http://t3dev.localhost'
+#    condition: 'getenv("HOST_ENV") == "localdev"'
   -
-    base: 'http://t3dev.localhost'
+    base: '/'
     condition: 'getenv("HOST_ENV") == "localdev"'
+errorHandling:
+  -
+    errorCode: '403'
+    errorHandler: Page
+    errorContentSource: '6577'
+  -
+    errorCode: '404'
+    errorHandler: Page
+    errorContentSource: '9'
 languages:
   -
     title: Russian
@@ -17,16 +28,9 @@ languages:
     hreflang: ru-RU
     direction: ''
     flag: ru
-errorHandling:
-  -
-    errorCode: '403'
-    errorHandler: Page
-    errorContentSource: '6577'
-  -
-    errorCode: '404'
-    errorHandler: Page
-    errorContentSource: '9'
-routes: {  }
+    websiteTitle: ''
+    solr_core_read: pruzzenland_de
+rootPageId: 1
 routeEnhancers:
   NewsPlugin:
     type: Extbase
@@ -57,3 +61,11 @@ routeEnhancers:
         type: StaticRangeMapper
         start: '1'
         end: '100'
+routes: {  }
+solr_enabled_read: true
+solr_host_read: 172.17.0.1
+solr_path_read: /solr/
+solr_port_read: '8983'
+solr_scheme_read: http
+solr_use_write_connection: false
+websiteTitle: ''
