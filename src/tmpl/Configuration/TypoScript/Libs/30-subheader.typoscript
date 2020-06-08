@@ -1,0 +1,26 @@
+lib.subheader = COA
+lib.subheader {
+    wrap = <div class="logo col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-2 col-xs-12">|</div>
+    10 = TEXT
+    10 {
+        value = {$config.subheader.companyName}
+        stdWrap.typolink {
+            wrap = <div class="company-name">|</div>
+            parameter =  {$config.navigation.rootPid}
+            ATagBeforeWrap = 1
+        }
+    }
+    20 = TEXT
+    20 {
+        wrap = <div class="slogan">|</div>
+        value = {$config.subheader.slogan}
+    }
+    30 = COA
+    30 {
+        wrap = <div class="phones">|</div>
+        1 = TEXT
+        1 {
+            value = {$config.subheader.phone1}
+        }
+    }
+}

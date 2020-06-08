@@ -49,7 +49,7 @@ config {
     # disable image upscaling
     noScaleUp = 1
 
-
+    /*
     htmlTag_stdWrap {
         setContentToCurrent = 1
         cObject = COA
@@ -80,8 +80,7 @@ config {
             50.wrap = <!--[if !(IE)]><!--> | <!--<![endif]-->
         }
     }
-
-
+    */
 
 }
 
@@ -89,3 +88,12 @@ page.config.headerComment (
   Dmitry Vasilev dmitry@t3dev.ru
   ___________________________________
 )
+
+# Admin Panel
+#page.config.admPanel = 1
+#config.admPanel = 1
+#config.admPanel.enable.all = 1
+
+# Front end editing
+config.frontend_editing = 0
+page.config.frontend_editing = 0

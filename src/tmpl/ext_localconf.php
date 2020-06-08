@@ -6,7 +6,7 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'T3Dev.Tmpl',
+            'Tmpl',
             'Tmpl',
             [
 

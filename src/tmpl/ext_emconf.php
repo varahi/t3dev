@@ -10,9 +10,9 @@
  * "version" and "dependencies" must not be touched!
  ***************************************************************/
 
-$EM_CONF[$_EXTKEY] = [
+$EM_CONF['tmpl'] = [
     'title' => 'Tmpl',
-    'description' => 'Site template',
+    'description' => 'Site template for t3dev.ru',
     'category' => 'plugin',
     'author' => 'Dmitry Vasilev',
     'author_email' => 'info@t3dev.ru',
@@ -20,10 +20,10 @@ $EM_CONF[$_EXTKEY] = [
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '1.0.0',
+    'version' => '10.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-9.5.99',
+            'typo3' => '10.4.0-10.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],

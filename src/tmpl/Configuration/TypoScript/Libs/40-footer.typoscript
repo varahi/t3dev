@@ -1,0 +1,15 @@
+lib.footer = COA
+lib.footer {
+    wrap = <div class="copyright">|</div>
+    10 = TEXT
+    10 {
+        value = {$config.footer.copyright}
+    }
+    20 = TEXT
+    20 {
+        value = {$config.footer.email}
+        stdWrap.typolink {
+            parameter = {$config.footer.email}
+        }
+    }
+}
