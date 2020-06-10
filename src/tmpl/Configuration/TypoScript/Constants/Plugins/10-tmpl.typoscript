@@ -1,5 +1,5 @@
 
-plugin.tx_tmpl_tmpl {
+plugin.tx_tmpl {
     view {
         # cat=plugin.tx_tmpl_tmpl/file; type=string; label=Path to template root (FE)
         templateRootPath = EXT:tmpl/Resources/Private/Templates/

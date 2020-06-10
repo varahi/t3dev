@@ -8,6 +8,30 @@
 			<trans-unit id="news.layout.list_news">
 				<source><![CDATA[List News]]></source>
 			</trans-unit>
+			<trans-unit id="header.h1_arrow_down">
+				<source><![CDATA[Header h1 with arrow down]]></source>
+			</trans-unit>
+			<trans-unit id="header.h1_licence">
+				<source><![CDATA[Header h1 licence]]></source>
+			</trans-unit>
+			<trans-unit id="header.h1_brief">
+				<source><![CDATA[Header h1 brief]]></source>
+			</trans-unit>
+			<trans-unit id="header.h1_info">
+				<source><![CDATA[Header h1 info]]></source>
+			</trans-unit>
+			<trans-unit id="header.h1_document">
+				<source><![CDATA[Header h1 document]]></source>
+			</trans-unit>
+			<trans-unit id="header.h1_document_pencil">
+				<source><![CDATA[Header h1 document with pencil]]></source>
+			</trans-unit>
+			<trans-unit id="header.h1_settings">
+				<source><![CDATA[Header h1 settings]]></source>
+			</trans-unit>
+			<trans-unit id="header.h1_globe">
+				<source><![CDATA[Header h1 globe]]></source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

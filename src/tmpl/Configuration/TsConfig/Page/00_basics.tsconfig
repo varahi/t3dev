@@ -16,10 +16,16 @@ TCEFORM.tt_content.header_layout {
     }
     addItems {
         # H2 Headers
-        #10 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_left
+        10 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h1_arrow_down
+        11 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h1_licence
+        12 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h1_brief
+        13 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h1_info
+        14 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h1_document
+        15 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h1_document_pencil
+        16 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h1_settings
+        17 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h1_globe
     }
 }
-
 
 # News template
 tx_news.templateLayouts {
