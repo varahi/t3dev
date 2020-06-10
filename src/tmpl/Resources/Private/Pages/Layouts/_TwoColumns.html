@@ -1,0 +1,61 @@
+<f:render partial="Header" arguments="{_all}" />
+<f:render partial="Navigation" arguments="{_all}" />
+
+<!-- Slider -->
+<section class="slider">
+    <f:render section="content_slider" />
+</section>
+<section class="teaser">
+    <div class="container">
+        <f:render section="content_teaser" />
+    </div>
+</section>
+
+<f:if condition="{f:cObject(typoscriptObjectPath: 'lib.parallaxImage')}">
+    <f:then>
+        <section class="parallax-window" data-parallax="scroll" data-image-src="<f:cObject typoscriptObjectPath="lib.parallaxImage" />">
+        <div class="container">
+            <f:render section="content_parallax" />
+        </div>
+        </section>
+    </f:then>
+    <f:else>
+        <section class="parallax-window" data-parallax="scroll" data-image-src="typo3conf/ext/tmpl/Resources/Public/Images/opl-parallax-universe.jpg">
+            <div class="container">
+                <f:render section="content_parallax" />
+            </div>
+        </section>
+    </f:else>
+</f:if>
+
+<section id="certification" class="section">
+    <div class="container">
+        <f:render section="content_certification" />
+    </div>
+</section>
+
+<section id="un-footer" class="section">
+    <div class="container">
+        <f:render section="content_unfooter" />
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__address">
+            <f:render section="content_footer" />
+        </div>
+        <f:cObject typoscriptObjectPath="lib.footerForm" />
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <f:cObject typoscriptObjectPath="lib.copyright" />
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

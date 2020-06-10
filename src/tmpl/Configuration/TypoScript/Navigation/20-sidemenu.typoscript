@@ -1,0 +1,20 @@
+lib.sideMenu >
+lib.sideMenu = HMENU
+lib.sideMenu {
+    wrap = <nav role="navigation">|</nav>
+    entryLevel = 1
+    1 = TMENU
+    1 {
+        wrap = <ul class="sidemenu">|</ul>
+        #special = directory
+        #special.value = {$page.menu.profileMenu}
+        # normal menu items
+        NO {
+            allWrap = <li class="normal">|</li>
+            stdWrap.htmlSpecialChars = 1
+        }
+        ACT < .NO
+        ACT = 1
+        ACT.allWrap = <li class="current">|</li>
+    }
+}

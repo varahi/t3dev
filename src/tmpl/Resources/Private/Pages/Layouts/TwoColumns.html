@@ -1,61 +1,64 @@
-<f:render partial="Header" arguments="{_all}" />
-<f:render partial="Navigation" arguments="{_all}" />
-
-<!-- Slider -->
-<section class="slider">
-    <f:render section="content_slider" />
-</section>
-<section class="teaser">
+<div class="main-wrapper">
+    <!-- Begin page content -->
     <div class="container">
-        <f:render section="content_teaser" />
-    </div>
-</section>
-
-<f:if condition="{f:cObject(typoscriptObjectPath: 'lib.parallaxImage')}">
-    <f:then>
-        <section class="parallax-window" data-parallax="scroll" data-image-src="<f:cObject typoscriptObjectPath="lib.parallaxImage" />">
-        <div class="container">
-            <f:render section="content_parallax" />
-        </div>
-        </section>
-    </f:then>
-    <f:else>
-        <section class="parallax-window" data-parallax="scroll" data-image-src="typo3conf/ext/tmpl/Resources/Public/Images/opl-parallax-universe.jpg">
-            <div class="container">
-                <f:render section="content_parallax" />
-            </div>
-        </section>
-    </f:else>
-</f:if>
-
-<section id="certification" class="section">
-    <div class="container">
-        <f:render section="content_certification" />
-    </div>
-</section>
-
-<section id="un-footer" class="section">
-    <div class="container">
-        <f:render section="content_unfooter" />
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer__address">
-            <f:render section="content_footer" />
-        </div>
-        <f:cObject typoscriptObjectPath="lib.footerForm" />
-    </div>
-
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <f:cObject typoscriptObjectPath="lib.copyright" />
+        <f:render partial="Header" arguments="{_all}" />
+        <div class="row">
+            <div class="col-md-9">
+                <f:render partial="Subheader" arguments="{_all}" />
+                <f:render partial="Share42" arguments="{_all}" />
+                <div class="content content-inner">
+                    <div class="text-area">
+                        <f:render partial="Breadcrumb" arguments="{_all}" />
+                        <f:render section="section_content" />
+                        <div class="clear"></div>
+                    </div>
                 </div>
             </div>
+
+            <div class="col-md-3 col-sm-offset-0 right-column">
+                <f:cObject typoscriptObjectPath="lib.sideMenu" />
+
+                <div class="neos-contentcollection">
+                    <div class="last-news">
+                        <div>
+                            <div class="last-news-item">
+                                <h4><a href="/news/detail/novyj-typo3-repozitarij">Новый TYPO3 репозитарий</a></h4>
+                                <span><i>23.08.2017</i></span>
+                                <span>, автор: Dmitry Vasilev</span>
+                                <br><br>
+                                Команда TYPO3 объявила о новом TYPO3 Extension Repository (TER). Он перенесен из typo3.org в новый субдомен extensions.typo3.org. Команда работает над тем, чтобы он имел те же функции, что и раньше.Пр...
+                                <a href="/news/detail/novyj-typo3-repozitarij">
+                                    <p>Подробнее...</p>
+                                </a>
+                            </div>
+
+                            <div class="last-news-item">
+                                <h4><a href="/news/detail/the-neos-conference-2017">
+                                    Участие российских разработчиков в конференции «The Neos Conference 2017» в Гамбурге</a></h4>
+                                <span><i>11.04.2017</i></span>
+                                <span>, автор: Иван Литовченко</span>
+                                <br><br>
+                                Небольшой экскурс в историю - что такое Neos и почему у TYPO3 CMS нет
+                                версии 5.0? В 2010 году в рамках TYPO3 CMS разрабатывался новый концепт
+                                системы, ключевыми ориентирами которого были удобство ре...
+                                <a href="/news/detail/the-neos-conference-2017">
+                                    <p>Подробнее...</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="vk_groups" style="width: 250px; height: 450px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;">
+                    <iframe name="fXDad674" src="https://vk.com/widget_community.php?app=0&amp;width=250px&amp;_ver=1&amp;gid=22546731&amp;mode=0&amp;color1=&amp;color2=&amp;color3=&amp;class_name=&amp;height=450&amp;url=http%3A%2F%2Ftypo3.ru.net%2Fcompany%2Fabout&amp;referrer=http%3A%2F%2Ftypo3.ru.net%2Fsearch&amp;title=%C2%AB%D0%A23%20%D0%A1%D1%82%D1%83%D0%B4%D0%B8%D1%8F%C2%BB%20-%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%BD%D0%B0%20TYPO3%20CMS%20%D0%B8%20Neos%20CMS&amp;1729e73bd99" scrolling="no" id="vkwidget1" style="overflow: hidden; height: 450px;" width="250" height="450" frameborder="0"></iframe>
+                </div>
+                <script type="text/javascript">
+                    VK.Widgets.Group("vk_groups", {mode: 0, width: "250", height: "450"}, 22546731);
+                </script>
+                <br />
+            </div>
+
         </div>
     </div>
-</footer>
+    <f:render partial="Footer" arguments="{_all}" />
+</div>

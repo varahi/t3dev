@@ -32,6 +32,9 @@
 			<trans-unit id="header.h1_globe">
 				<source><![CDATA[Header h1 globe]]></source>
 			</trans-unit>
+			<trans-unit id="page.hide_breadcrumb">
+				<source><![CDATA[Hide breadcrumb]]></source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

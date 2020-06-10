@@ -297,12 +297,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d9add', end
   font-size: 12px;
   font-weight: bold;
   position: relative;
-  right: 40px;
+  /*right: 40px;*/
+  right: 1px;
+  padding: 0;
 }
 
 .sidemenu li a {
   display: block;
-  width: 258px;
+  /*width: 258px;*/
+  width: 100%;
   min-height: 35px;
   height: auto;
   background: #f99b67;
@@ -435,6 +438,10 @@ body:before {
   position: relative;
   padding-bottom: 20px;
 }
+.content-inner {
+  min-height: 900px;
+}
+
 .content p {
   margin-bottom: 10px;
 }
@@ -633,7 +640,8 @@ span.date {
   position: relative;
   top: -12px;
   left: -1px;
-  width: 259px;
+  /*width: 259px;*/
+  width: 100%;
   font-size: 12px !important;
 }
 .last-news-item {
