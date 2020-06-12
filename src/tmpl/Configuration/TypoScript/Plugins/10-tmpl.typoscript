@@ -1,7 +1,6 @@
 #
 # Templates and settings for EXT:tmpl based plugins
 #
-
 plugin.tx_tmpl {
     view {
         templateRootPaths.0 = {$plugin.tx_tmpl.view.templateRootPath}

@@ -18,6 +18,9 @@ body {
 height: 100px;
 background: #0F5A99 none repeat scroll 0% 0%;  
 }
+#footer a {
+  color: #fff;
+}
 .copyright {
   color: #fff;
   text-align: center;
@@ -439,7 +442,7 @@ body:before {
   padding-bottom: 20px;
 }
 .content-inner {
-  min-height: 900px;
+  min-height: 650px;
 }
 
 .content p {
@@ -645,7 +648,7 @@ span.date {
   font-size: 14px !important;
 }
 .last-news-item {
-  padding: 0 10px;
+  padding: 5px 10px 0 10px;
   height: 245px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid #006699;
@@ -665,6 +668,22 @@ span.date {
 .teaser-text {
   line-height: 20px;
 }
+
+.last-news-meta {
+  line-height: 22px;
+  padding-bottom: 10px;
+}
+
+/* Single News
+----------------------------------------------------------------------------*/
+.news-single .news-img-wrap {
+  float: left;
+  margin: 0 15px 0 0;
+  padding: 4px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
 
 /* Paginator
 -----------------------------------------------------------------------------*/

@@ -16,34 +16,35 @@
 		</n:link>
 	</h4>
 
-	<!-- date -->
-	<span class="news-list-date">
-		<time itemprop="datePublished" datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
-			<f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
-		</time>
-	</span>
+	<div class="last-news-meta">
+		<!-- date -->
+		<span class="news-list-date">
+			<time itemprop="datePublished" datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
+				<f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
+			</time>
+		</span>
 
-	<f:if condition="{newsItem.firstCategory}">
-		<!-- first category -->
-		<span class="news-list-category">{newsItem.firstCategory.title}</span>
-	</f:if>
+		<f:if condition="{newsItem.firstCategory}">
+			<!-- first category -->
+			<span class="news-list-category">{newsItem.firstCategory.title}</span>
+		</f:if>
 
-	<f:if condition="{newsItem.tags}">
-		<!-- Tags -->
-		<span class="news-list-tags" itemprop="keywords">
+		<f:if condition="{newsItem.tags}">
+			<!-- Tags -->
+			<span class="news-list-tags" itemprop="keywords">
 			<f:for each="{newsItem.tags}" as="tag">
 				{tag.title}
 			</f:for>
 		</span>
-	</f:if>
+		</f:if>
 
-	<!-- author -->
-	<f:if condition="{newsItem.author}">
+		<!-- author -->
+		<f:if condition="{newsItem.author}">
 		<span class="news-list-author">
-			<f:translate key="author" arguments="{0:newsItem.author}"/>
+			<f:translate key="news.author" arguments="{0:newsItem.author}" extensionName="tmpl" />
 		</span>
-	</f:if>
-	<br /><br />
+		</f:if>
+	</div>
 
 	<!-- teaser -->
 	<div class="teaser-text">

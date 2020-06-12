@@ -9,6 +9,14 @@
 				<source><![CDATA[Read more]]></source>
 				<target><![CDATA[Подробнее...]]></target>
 			</trans-unit>
+			<trans-unit id="news.author" xml:space="preserve">
+				<source>Created by %s</source>
+				<target><![CDATA[Автор]]></target>
+			</trans-unit>
+			<trans-unit id="news.author_simple" xml:space="preserve">
+				<source>Created by</source>
+				<target><![CDATA[Автор]]></target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
