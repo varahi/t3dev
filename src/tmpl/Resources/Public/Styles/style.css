@@ -673,6 +673,13 @@ span.date {
   line-height: 22px;
   padding-bottom: 10px;
 }
+.news .news-img-wrap {
+  float: left;
+  margin: 0 15px 0 0;
+  padding: 4px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
 
 /* Single News
 ----------------------------------------------------------------------------*/

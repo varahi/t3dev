@@ -49,7 +49,7 @@ plugin.tx_news {
 			skipControllerAndAction = 0
 		}
 
-		cropMaxCharacters = 150
+		cropMaxCharacters = 500
 		orderBy = datetime
 		orderDirection = desc
 		topNewsFirst = 0
@@ -116,8 +116,10 @@ plugin.tx_news {
 			# media configuration
 			media {
 				image {
-					maxWidth = 100
-					maxHeight = 100
+					maxWidth = 250
+					maxHeight = 140
+					width = 260c
+					height = 150c
 				}
 
 				dummyImage = typo3conf/ext/news/Resources/Public/Images/dummy-preview-image.png
