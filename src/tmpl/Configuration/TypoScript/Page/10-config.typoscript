@@ -40,8 +40,8 @@ config {
     concatenateCss = 1
 
     # JS handling
-    compressJs = 1
-    concatenateJs = 1
+    compressJs = 0
+    concatenateJs = 0
 
     # for browsers and proxies
     sendCacheHeaders = 1

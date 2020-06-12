@@ -29,5 +29,5 @@ TCEFORM.tt_content.header_layout {
 
 # News template
 tx_news.templateLayouts {
-    1 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:news.layout.list_news
+    2 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:news.layout.list_news
 }

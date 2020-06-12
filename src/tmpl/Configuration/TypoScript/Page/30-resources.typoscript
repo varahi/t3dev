@@ -33,15 +33,15 @@ page.includeJSFooter {
     30_bootstrap = EXT:tmpl/Resources/Public/JavaScript/bootstrap.min.js
     40_smartmenu = EXT:tmpl/Resources/Public/JavaScript/jquery.smartmenus.min.js
     50_smartmenu_bootstrap = EXT:tmpl/Resources/Public/JavaScript/jquery.smartmenus.bootstrap.min.js
-    60_lightbox = EXT:tmpl/Resources/Public/JavaScript/jquery.lightbox.min.js
-    70_validation = EXT:tmpl/Resources/Public/JavaScript/jquery.validationEngine.js
-    80_validation_ru = EXT:tmpl/Resources/Public/JavaScript/jquery.validationEngine-ru.js
-    90_maginific_popup = EXT:tmpl/Resources/Public/JavaScript/jquery.magnific-popup.min.js
-    100_datepicker = EXT:tmpl/Resources/Public/JavaScript/bootstrap-datepicker.min.js
-    110_datepicker_ru = EXT:tmpl/Resources/Public/JavaScript/bootstrap-datepicker.ru.min.js
-    120_gridfolio = EXT:tmpl/Resources/Public/JavaScript/jquery.wm-gridfolio-1.0.js
+    //60_lightbox = EXT:tmpl/Resources/Public/JavaScript/jquery.lightbox.min.js
+    //70_validation = EXT:tmpl/Resources/Public/JavaScript/jquery.validationEngine.js
+    //80_validation_ru = EXT:tmpl/Resources/Public/JavaScript/jquery.validationEngine-ru.js
+    //90_maginific_popup = EXT:tmpl/Resources/Public/JavaScript/jquery.magnific-popup.min.js
+    //100_datepicker = EXT:tmpl/Resources/Public/JavaScript/bootstrap-datepicker.min.js
+    //110_datepicker_ru = EXT:tmpl/Resources/Public/JavaScript/bootstrap-datepicker.ru.min.js
+    //120_gridfolio = EXT:tmpl/Resources/Public/JavaScript/jquery.wm-gridfolio-1.0.js
     //130_search = EXT:tmpl/Resources/Public/JavaScript/IndexedSearch.js
-    140_custom = EXT:tmpl/Resources/Public/JavaScript/custom.js
+    //140_custom = EXT:tmpl/Resources/Public/JavaScript/custom.js
 }
 
 # Maybe include some JS stuff rather in footer than in header

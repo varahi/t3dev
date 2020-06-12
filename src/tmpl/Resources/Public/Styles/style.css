@@ -642,7 +642,7 @@ span.date {
   left: -1px;
   /*width: 259px;*/
   width: 100%;
-  font-size: 12px !important;
+  font-size: 14px !important;
 }
 .last-news-item {
   padding: 0 10px;
@@ -662,7 +662,9 @@ span.date {
 .relatedNews p {
   margin-bottom: 0;
 }
-
+.teaser-text {
+  line-height: 20px;
+}
 
 /* Paginator
 -----------------------------------------------------------------------------*/

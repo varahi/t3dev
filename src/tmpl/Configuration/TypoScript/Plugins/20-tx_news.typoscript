@@ -1,0 +1,23 @@
+lib.lastNews = USER
+lib.lastNews {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = News
+    pluginName = Pi1
+    vendorName = GeorgRinger
+
+    switchableControllerActions {
+        News {
+            1 = list
+        }
+    }
+
+    settings < plugin.tx_news.settings
+    settings {
+        templateLayout = 1
+        //categories = 49
+        limit = 2
+        detailPid = 8
+        overrideFlexformSettingsIfEmpty := addToList(detailPid)
+        startingpoint = 19
+    }
+}
