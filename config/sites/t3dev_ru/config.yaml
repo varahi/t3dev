@@ -1,10 +1,7 @@
-base: '/'
+base: 'http://t3dev.ru/'
 baseVariants:
-#  -
-#    base: 'http://t3dev.localhost'
-#    condition: 'getenv("HOST_ENV") == "localdev"'
   -
-    base: '/'
+    base: 'http://t3dev.localhost/'
     condition: 'getenv("HOST_ENV") == "localdev"'
 errorHandling:
   -
