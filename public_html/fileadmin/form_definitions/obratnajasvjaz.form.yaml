@@ -25,7 +25,7 @@ renderables:
       nextButtonLabel: 'Следующий шаг'
     type: Page
     identifier: page-1
-    label: Step
+    label: 'Обратная связь'
     renderables:
       -
         defaultValue: ''

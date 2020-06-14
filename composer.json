@@ -38,7 +38,6 @@
 		"helhum/config-loader": "^0.12",
 		"helhum/dotenv-connector": "^2",
 		"helhum/typo3-console": "^6.3",
-		"in2code/powermail": "^8.1",
 		"lavitto/typo3-fancybox": "^1.0",
 		"lochmueller/sourceopt": "dev-master",
 		"t3dev/tmpl": "~10.0",
@@ -72,7 +71,8 @@
 		"typo3/cms-sys-note": "~10.4.0",
 		"typo3/cms-t3editor": "~10.4.0",
 		"typo3/cms-tstemplate": "~10.4.0",
-		"typo3/cms-viewpage": "~10.4.0"
+		"typo3/cms-viewpage": "~10.4.0",
+		"undefined/translate-locallang": "^2.7"
 	},
 	"scripts":{
 		"typo3-cms-scripts": [
