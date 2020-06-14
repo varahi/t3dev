@@ -1,0 +1,29 @@
+<div class="main-wrapper">
+    <!-- Begin page content -->
+    <div class="container">
+        <f:render partial="Header" arguments="{_all}" />
+        <div class="row">
+            <div class="col-md-12">
+                <f:render partial="Subheader" arguments="{_all}" />
+                <div class="text-area contact">
+                    <f:render partial="Breadcrumb" arguments="{_all}" />
+                    <f:render section="section_content" />
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <f:render section="section_map" />
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content">
+                    <div class="text-area">
+                        <f:render section="section_form" />
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <f:render partial="Footer" arguments="{_all}" />
+</div>

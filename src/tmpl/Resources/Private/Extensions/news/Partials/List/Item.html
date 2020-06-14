@@ -55,7 +55,7 @@
 			<!-- date -->
 			<span class="news-list-date">
 				<time itemprop="datePublished" datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
-					<f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
+					<f:format.date format="{f:translate(key:'news.date_format', extensionName: 'tmpl')}">{newsItem.datetime}</f:format.date>
 				</time>
 			</span>
 

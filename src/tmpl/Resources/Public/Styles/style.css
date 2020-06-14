@@ -451,6 +451,12 @@ body:before {
 .text-area {
   padding: 0 15px 0 15px;
 }
+.contact {
+  margin-top: 10px;
+}
+.contact p {
+  line-height: 22px;
+}
 
 .content:before, .content:after {
   z-index: -1; 

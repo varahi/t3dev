@@ -2,9 +2,20 @@ plugin.tx_powermail.settings.main.pid = 0
 plugin.tx_powermail.settings.main.confirmation = 0
 plugin.tx_powermail.settings.main.optin = 0
 plugin.tx_powermail.settings.main.moresteps = 0
-plugin.tx_powermail.settings.receiver.overwrite.email = info@all-power.ru
+plugin.tx_powermail.settings.receiver.overwrite.email = info@t3dev.ru
 plugin.tx_powermail.settings.receiver.overwrite.name = Администратору сайта
 
-plugin.tx_powermail.settings.captcha.image = EXT:tmpl/Resources/Public/Images/captcha_bg.png
-plugin.tx_powermail.settings.captcha.textSize = 24
-plugin.tx_powermail.settings.captcha.distanceVer = 10,25
+#plugin.tx_powermail.settings.captcha.image = EXT:tmpl/Resources/Public/Images/captcha_bg.png
+#plugin.tx_powermail.settings.captcha.textSize = 24
+#plugin.tx_powermail.settings.captcha.distanceVer = 10,25
+
+plugin.tx_powermail {
+    view {
+        templateRootPath = EXT:tmpl/Resources/Private/Extensions/Templates/
+        partialRootPath = EXT:tmpl/Resources/Private/Extensions/Partials/
+        layoutRootPath = EXT:tmpl/Resources/Private/Extensions/Layouts/
+    }
+    settings {
+        misc.ajaxSubmit = 1
+    }
+}

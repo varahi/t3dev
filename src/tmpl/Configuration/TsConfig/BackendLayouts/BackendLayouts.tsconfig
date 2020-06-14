@@ -42,4 +42,41 @@ mod.web_layout.BackendLayouts {
         }
     }
 
+    3 {
+        title = Contact Page
+        icon = tmpl-backend-layout
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 3
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Map
+                                colPos = 1
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Content
+                                colPos = 0
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = Form
+                                colPos = 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

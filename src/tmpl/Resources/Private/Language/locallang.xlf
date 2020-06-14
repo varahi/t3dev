@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-08-20T13:55:07Z">
-		<header>
-			<generator>LFEditor</generator>
-		</header>
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-06-14T12:03:48Z" product-name="tmpl">
+		<header/>
 		<body>
 			<trans-unit id="ce.teaser_card.more">
 				<source><![CDATA[More]]></source>
@@ -38,14 +36,20 @@
 			<trans-unit id="news.read_more">
 				<source><![CDATA[Read more]]></source>
 			</trans-unit>
-			<trans-unit id="news.author" xml:space="preserve">
+			<trans-unit id="news.author">
 				<source>Created by %s</source>
 			</trans-unit>
-			<trans-unit id="news.author_simple" xml:space="preserve">
+			<trans-unit id="news.author_simple">
 				<source>Created by</source>
 			</trans-unit>
-			<trans-unit id="news.back_link" xml:space="preserve">
+			<trans-unit id="news.back_link">
 				<source>Back link</source>
+			</trans-unit>
+			<trans-unit id="news.date_format">
+				<source>%d.%m.%Y</source>
+			</trans-unit>
+			<trans-unit id="news.date_format_detail">
+				<source>%d %B %Y</source>
 			</trans-unit>
 		</body>
 	</file>

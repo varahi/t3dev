@@ -1,21 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2019-08-20T13:55:07Z">
-		<header>
-			<generator>LFEditor</generator>
-		</header>
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2020-06-14T12:03:48Z" product-name="tmpl">
+		<header/>
 		<body>
+			<trans-unit id="ce.teaser_card.more">
+				<source><![CDATA[More]]></source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="page.contacts">
+				<source><![CDATA[Contacts]]></source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="page.content.about_company">
+				<source><![CDATA[About company]]></source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="page.content.close">
+				<source><![CDATA[Close]]></source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="page.content.contacts">
+				<source><![CDATA[Contacts]]></source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="page.content.download">
+				<source><![CDATA[Download]]></source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="page.content.sendMessage">
+				<source><![CDATA[Send Message]]></source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="page.content.services">
+				<source><![CDATA[Services]]></source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="search.submit">
+				<source><![CDATA[Search]]></source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="slider.link_more">
+				<source><![CDATA[More]]></source>
+				<target>Подробнее...</target>
+			</trans-unit>
 			<trans-unit id="news.read_more">
 				<source><![CDATA[Read more]]></source>
-				<target><![CDATA[Подробнее...]]></target>
+				<target>Подробнее...</target>
 			</trans-unit>
-			<trans-unit id="news.author" xml:space="preserve">
+			<trans-unit id="news.author">
 				<source>Created by %s</source>
-				<target><![CDATA[Автор]]></target>
+				<target>Автор %s</target>
 			</trans-unit>
-			<trans-unit id="news.author_simple" xml:space="preserve">
+			<trans-unit id="news.author_simple">
 				<source>Created by</source>
-				<target><![CDATA[Автор]]></target>
+				<target>Автор</target>
+			</trans-unit>
+			<trans-unit id="news.back_link">
+				<source>Back link</source>
+				<target>Назад</target>
+			</trans-unit>
+			<trans-unit id="news.date_format">
+				<source>%d.%m.%Y</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="news.date_format_detail">
+				<source>%d %B %Y</source>
+				<target></target>
 			</trans-unit>
 		</body>
 	</file>

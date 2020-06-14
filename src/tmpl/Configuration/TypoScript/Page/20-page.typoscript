@@ -48,13 +48,16 @@ page {
                     pagets__2 = TEXT
                     pagets__2.value = TwoColumns
 
+                    pagets__3 = TEXT
+                    pagets__3.value = ContactPage
+
                     default = TEXT
                     default.value =
                 }
 
             }
 
-            ifEmpty = Main
+            ifEmpty = OneColumn
 
         }
 
@@ -80,6 +83,11 @@ page {
                 stdWrap.required = 1
             }
 
+            content_map < styles.content.get
+            content_map.select.where = colPos=1
+
+            content_form < styles.content.get
+            content_form.select.where = colPos=2
         }
 
         /*
