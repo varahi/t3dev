@@ -1,0 +1,127 @@
+
+renderingOptions:
+  submitButtonLabel: Отправить
+type: Form
+identifier: obratnajasvjaz
+label: 'Обратная связь'
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Сообщение с сайта t3dev.ru'
+      recipients:
+        info@t3dev.ru: ''
+      senderAddress: noreply@t3dev.ru
+      senderName: ''
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Предыдущий шаг'
+      nextButtonLabel: 'Следующий шаг'
+    type: Page
+    identifier: page-1
+    label: Step
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: 'Ваше Имя:'
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Ваше Имя:'
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Это поле должно быть заполнено'
+            -
+              code: 1221560718
+              message: 'Это поле должно быть заполнено'
+            -
+              code: 1347992400
+              message: 'Это поле должно быть заполнено'
+            -
+              code: 1347992453
+              message: 'Это поле должно быть заполнено'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: 'Ваш Email'
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Ваш Email'
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Это поле должо быть заполнено'
+            -
+              code: 1221560718
+              message: 'Это поле должо быть заполнено'
+            -
+              code: 1347992400
+              message: 'Это поле должо быть заполнено'
+            -
+              code: 1347992453
+              message: 'Это поле должо быть заполнено'
+            -
+              code: 1221559976
+              message: 'Это поле должо быть заполнено'
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Telephone
+        identifier: telephone-1
+        label: 'Ваш Телефон:'
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Ваш Телефон:'
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Сообщение
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Сообщение
+            required: required
+            minlength: '10'
+            maxlength: '10000'
+          validationErrorMessages:
+            -
+              code: 1238110957
+              message: 'Вы ввели слишком короткое сообщение, боюсь мы не поймем о чем идет речь.'
+            -
+              code: 1269883975
+              message: 'Вы ввели слишком короткое сообщение, боюсь мы не поймем о чем идет речь.'
+            -
+              code: 1428504122
+              message: 'Вы ввели слишком короткое сообщение, боюсь мы не поймем о чем идет речь.'
+            -
+              code: 1238108068
+              message: 'Вы ввели слишком короткое сообщение, боюсь мы не поймем о чем идет речь.'
+            -
+              code: 1238108069
+              message: 'Вы ввели слишком короткое сообщение, боюсь мы не поймем о чем идет речь.'
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            options:
+              minimum: '10'
+              maximum: '10000'
+            identifier: StringLength
