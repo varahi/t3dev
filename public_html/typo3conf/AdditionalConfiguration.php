@@ -35,4 +35,5 @@ foreach ($configurationFiles as $file) {
     require_once($file);
 }
 
-//$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['solr']['sites']['1']['path'] = '/solr/core_ru/';
+// Disable deprecation log
+$GLOBALS['TYPO3_CONF_VARS']['LOG']['TYPO3']['CMS']['deprecations']['writerConfiguration'][\TYPO3\CMS\Core\Log\LogLevel::NOTICE] = [];
