@@ -1,6 +1,6 @@
 styles {
     content {
-        defaultHeaderType = 1
+        defaultHeaderType = 2
 
         media {
             defaultVideoWidth = 370
@@ -16,6 +16,8 @@ styles {
             linkWrap.lightboxEnabled = 1
             linkWrap.lightboxCssClass = fancybox
             linkWrap.lightboxRelAttribute = fancybox[{field:uid}]
+            linkWrap.width = 1200m
+            linkWrap.height = 1000m
         }
 
     }

@@ -53,16 +53,16 @@ mod.web_layout.BackendLayouts {
                     1 {
                         columns {
                             1 {
-                                name = Map
-                                colPos = 1
+                                name = Content
+                                colPos = 0
                             }
                         }
                     }
                     2 {
                         columns {
                             1 {
-                                name = Content
-                                colPos = 0
+                                name = Map
+                                colPos = 1
                             }
                         }
                     }

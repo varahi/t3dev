@@ -487,6 +487,13 @@ body:before {
   right: 10px;
   left: auto;
 }
+.content-height:before {
+  left: 20px;
+}
+.content-height:after {
+  right: 20px;
+}
+
 hr {
   border-bottom: 1px dotted #eaac8e;
 }

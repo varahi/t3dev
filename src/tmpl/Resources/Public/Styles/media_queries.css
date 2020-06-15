@@ -172,7 +172,17 @@
   }
   .callback {
     display: none;
-  }  
+  }
+    .ce-column {
+        margin-right: 0;
+    }
+    .ce-gallery img {
+        width: 100%;
+        height: auto;
+    }
+    .ce-gallery figure {
+        margin-bottom: 10px;
+    }
 }
 
 /* Custom, iPhone Retina */ 
