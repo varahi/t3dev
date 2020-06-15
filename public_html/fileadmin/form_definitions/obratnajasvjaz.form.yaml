@@ -18,6 +18,11 @@ finishers:
       translation:
         language: ''
     identifier: EmailToReceiver
+  -
+    options:
+      pageUid: '27'
+      additionalParameters: ''
+    identifier: Redirect
 renderables:
   -
     renderingOptions:
@@ -25,7 +30,7 @@ renderables:
       nextButtonLabel: 'Следующий шаг'
     type: Page
     identifier: page-1
-    label: 'Обратная связь'
+    label: 'Написать нам'
     renderables:
       -
         defaultValue: ''

@@ -1,0 +1,14 @@
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                templateRootPaths:
+                  20: 'EXT:tmpl/Resources/Private/Content/Form/ContactPage/Templates/'
+                partialRootPaths:
+                  20: 'EXT:tmpl/Resources/Private/Content/Form/ContactPage/Partials/'
+                layoutRootPaths:
+                  20: 'EXT:tmpl/Resources/Private/Layouts/Form/ContactPage/Frontend/'

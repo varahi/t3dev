@@ -1,5 +1,8 @@
 $(function(){
-  if ($(window).height() > 800){
-    $(".content").addClass("content-height");
+  if ($("div.content").height() > 1000) {
+    $(".content").addClass("content-height-1000");
+  }
+  if ($("div.content").height() > 2500) {
+    $(".content").addClass("content-height-2500");
   }
 });

@@ -487,11 +487,17 @@ body:before {
   right: 10px;
   left: auto;
 }
-.content-height:before {
+.content-height-1000:before {
   left: 20px;
 }
-.content-height:after {
+.content-height-1000:after {
   right: 20px;
+}
+.content-height-2500:before {
+  left: 35px;
+}
+.content-height-2500:after {
+  right: 35px;
 }
 
 hr {
@@ -857,4 +863,11 @@ small.error {
 }
 .wmg-details-content h3 {
   padding-right: 15px;
+}
+
+.feedback .form-group textarea {
+  min-height: 200px;
+}
+.feedback .form-group .control-label {
+  display: none;
 }
