@@ -29,8 +29,5 @@ call_user_func(
          *  Configuration ce for tables
          */
         //\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_tmplcemainslider_item');
-
     }
 );
-
-
