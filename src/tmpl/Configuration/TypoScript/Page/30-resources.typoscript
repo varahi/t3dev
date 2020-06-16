@@ -4,11 +4,11 @@ page.includeCSS {
     20_bootstrap  = EXT:tmpl/Resources/Public/Styles/bootstrap.css
     30_bootstrap_theme  = EXT:tmpl/Resources/Public/Styles/bootstrap-theme.min.css
     40_smartmenu  = EXT:tmpl/Resources/Public/Styles/jquery.smartmenus.bootstrap.css
-    50_lightbox  = EXT:tmpl/Resources/Public/Styles/jquery.lightbox.min.css
-    60_magnific_popup  = EXT:tmpl/Resources/Public/Styles/magnific-popup.css
-    70_validation  = EXT:tmpl/Resources/Public/Styles/validationEngine.jquery.css
-    80_gridfolio  = EXT:tmpl/Resources/Public/Styles/jquery.wm-gridfolio-1.0.css
-    90_datepicker  = EXT:tmpl/Resources/Public/Styles/bootstrap-datepicker3.min.css
+    //50_lightbox  = EXT:tmpl/Resources/Public/Styles/jquery.lightbox.min.css
+    //60_magnific_popup  = EXT:tmpl/Resources/Public/Styles/magnific-popup.css
+    //70_validation  = EXT:tmpl/Resources/Public/Styles/validationEngine.jquery.css
+    //80_gridfolio  = EXT:tmpl/Resources/Public/Styles/jquery.wm-gridfolio-1.0.css
+    //90_datepicker  = EXT:tmpl/Resources/Public/Styles/bootstrap-datepicker3.min.css
     100_fonts  = EXT:tmpl/Resources/Public/Styles/fonts/fonts.css
     110_style  = EXT:tmpl/Resources/Public/Styles/style.css
     120_media_queries  = EXT:tmpl/Resources/Public/Styles/media_queries.css
