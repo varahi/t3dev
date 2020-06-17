@@ -17,7 +17,7 @@ config {
     }
 
     header {
-        logoTitle =
+        logoTitle = «Т3 Студия» - разработка сайтов на TYPO3 CMS
         logoSmallTitle =
         bannerTitle =
         phone = <a href="tel:+74959691730">(495) 969-17-30</a>

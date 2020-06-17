@@ -76,7 +76,7 @@
 			<!-- author -->
 			<f:if condition="{newsItem.author}">
 				<span class="news-list-author">
-					<f:translate key="author" arguments="{0:newsItem.author}"/>
+					<f:translate key="news.author" arguments="{0:newsItem.author}" extensionName="tmpl" />
 				</span>
 			</f:if>
 		</p>
@@ -96,7 +96,7 @@
 		</n:removeMediaTags>
 
 		<n:link newsItem="{newsItem}" settings="{settings}" class="more" title="{newsItem.title}">
-			<f:translate key="more-link"/>
+			<f:translate key="news.read_more" extensionName="tmpl"/>
 		</n:link>
 	</div>
 </div>

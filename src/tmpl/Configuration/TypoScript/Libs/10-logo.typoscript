@@ -5,8 +5,8 @@ lib.logo {
     10 = IMAGE
     10 {
         file = EXT:tmpl/Resources/Public/Images/typo3.png
-        altText = {$config.page.header.logoTitle}
-        titleText = {$config.page.header.logoTitle}
+        altText = {$config.header.logoTitle}
+        titleText = {$config.header.logoTitle}
         file.width = 129
         #file.height = 70
         stdWrap.typolink.parameter =  {$config.navigation.rootPid}

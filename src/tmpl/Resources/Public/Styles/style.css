@@ -877,3 +877,13 @@ small.error {
 .row-images-list {
   margin-bottom: 10px;
 }
+.news-related-links ul {
+  list-style: none;
+}
+#c99 .img-thumbnail {
+  -webkit-box-shadow: 0 0 0 rgba(0,0,0,.075);
+  box-shadow: 0 0 0 rgba(0,0,0,.075);
+}
+#c99 .img-thumbnail {
+  border: none;
+}
