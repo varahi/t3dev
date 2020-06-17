@@ -8,7 +8,7 @@ plugin.tx_tmpl {
         layoutRootPaths.0 = {$plugin.tx_tmpl.view.layoutRootPath}
     }
     persistence {
-        storagePid = {$plugin.tx_pimentconfig.persistence.storagePid}
+        storagePid = {$plugin.tx_tmpl.persistence.storagePid}
     }
     features {
         # uncomment the following line to enable the new Property Mapper.
