@@ -24,3 +24,9 @@ lib.subheader {
         }
     }
 }
+
+lib.slogan = TEXT
+lib.slogan {
+    wrap = <p>|</p>
+    value = {$config.header.slogan}
+}

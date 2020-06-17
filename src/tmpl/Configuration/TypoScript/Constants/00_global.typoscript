@@ -22,6 +22,7 @@ config {
         bannerTitle =
         phone = <a href="tel:+74959691730">(495) 969-17-30</a>
         email = info@all-power.ru
+        slogan = Развивай бизнес - используй TYPO3
     }
 
     subheader {

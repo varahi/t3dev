@@ -1,0 +1,162 @@
+###
+# ignore some instance-specific local environment config files
+#
+/.env
+/config/local.settings.yaml
+
+
+###
+# some typical TYPO3 folders and files to be ignored
+#
+/public_html/FIRST_INSTALL
+/public_html/fileadmin
+/public_html/uploads
+/public_html/typo3temp/*
+/public_html/typo3
+/public_html/typo3_src
+/public_html/index.php
+/var/*
+/var/cache/*
+!/var/cache/.gitkeep
+/var/log/*
+!/var/log/.gitkeep
+/var/session/*
+!/var/session/.gitkeep
+/var/storage/*
+!/var/storage/.gitkeep
+
+
+###
+# composer friendly setup for typo3conf folders / files
+#
+/public_html/typo3conf/*
+!/public_html/typo3conf/LocalConfiguration.php
+!/public_html/typo3conf/AdditionalConfiguration.php
+!/public_html/typo3conf/PackageStates.php
+
+/public_html/typo3conf/conf.d/*
+!/public_html/typo3conf/conf.d/.gitkeep
+
+# TODO: think about that!
+#!/public_html/typo3conf/l10n
+
+##
+# own or patched extensions to be included in GIT repo
+#
+!/public_html/typo3conf/ext/dix_urltool
+!/public_html/typo3conf/ext/elixier
+!/public_html/typo3conf/ext/oermeta
+!/public_html/typo3conf/ext/pruzzenland
+!/public_html/typo3conf/ext/tmpl
+!/public_html/typo3conf/ext/uemat
+!/public_html/typo3conf/ext/zt_solr
+
+###
+# some dev helper / compiled files to be ignored
+# TODO: think about that - maybe include some of them again?
+#
+#/public_html/typo3conf/ext/tmpl/Resources/Public/css/*
+#/public_html/typo3conf/ext/tmpl/Resources/Public/js/*
+
+###
+# ignore test screenshots and results
+# TODO: think about that - maybe include some of them again?
+#
+#/tests/visual/backstop_data/bitmaps_reference/*.png
+#/tests/visual/backstop_data/bitmaps_test/*/*.png
+#/tests/visual/backstop_data/ci_report/*.xml
+#/tests/visual/backstop_data/html_report/*
+#!/tests/visual/backstop_data/html_report/.keep
+
+
+###
+# typical build / composer / vendor folders to ignore
+#
+/vendor
+/node_modules
+/.build-cache
+/_temp/*
+!/_temp/.gitkeep
+/bin
+/typo3cms
+
+
+###
+# Ignoring temporary files (left by e.g. vim)
+# Ignoring by common IDE's used directories/files
+#
+*~
+*.bak
+*.idea
+*.project
+*.swp
+.buildpath
+.cache
+*.cache
+.project
+.session
+.settings
+.TemporaryItems
+.webprj
+nbproject
+.nbproject
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.htpasswd
+.sass-cache
+.tmproj
+*.sublime-project
+*.sublime-workspace;
+.env
+
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+
+# SASS               #
+######################
+*.sass-cache
+*.scssc
+
+
+# Codekit            #
+######################
+*.codekit
+
+
+# Sublime Text       #
+######################
+*.sublime-project
+*.sublime-workspace

@@ -45,6 +45,9 @@ return [
             'loginHighlightColor' => '',
             'loginLogo' => '',
         ],
+        'crowdin' => [
+            'inlineTranslationProjectIdentifier' => 'typo3-cms',
+        ],
         'cs_seo' => [
             'evaluationDoktypes' => '1',
             'evaluators' => 'Title,Description,H1,H2,Images,Keyword',

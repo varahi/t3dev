@@ -107,6 +107,9 @@ return [
         'frontend_editing' => [
             'packagePath' => 'typo3conf/ext/frontend_editing/',
         ],
+        'crowdin' => [
+            'packagePath' => 'typo3conf/ext/crowdin/',
+        ],
         'fancybox' => [
             'packagePath' => 'typo3conf/ext/fancybox/',
         ],

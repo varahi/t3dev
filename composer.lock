@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19c8fc1fb7c96205ce753cfdb8d16e3d",
+    "content-hash": "f883307c5c4b327e640c469a97dc499b",
     "packages": [
         {
             "name": "clickstorm/cs_seo",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/clickstorm/cs_seo.git",
-                "reference": "809d4240843e2f0ca9fc02366a0bfc002333f918"
+                "reference": "82f0d7836bec53d33eaa03ad4ed45ead4b2f4124"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clickstorm/cs_seo/zipball/809d4240843e2f0ca9fc02366a0bfc002333f918",
-                "reference": "809d4240843e2f0ca9fc02366a0bfc002333f918",
+                "url": "https://api.github.com/repos/clickstorm/cs_seo/zipball/82f0d7836bec53d33eaa03ad4ed45ead4b2f4124",
+                "reference": "82f0d7836bec53d33eaa03ad4ed45ead4b2f4124",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 "seo",
                 "typo3"
             ],
-            "time": "2020-06-12T13:09:02+00:00"
+            "time": "2020-06-16T13:43:30+00:00"
         },
         {
             "name": "cogpowered/finediff",
@@ -698,6 +698,60 @@
                 "viewhelper"
             ],
             "time": "2020-06-02T08:10:31+00:00"
+        },
+        {
+            "name": "friendsoftypo3/crowdin",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfTYPO3/crowdin.git",
+                "reference": "97a7be984d588dfc60c12a41b7cf71ca7afd7233"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/crowdin/zipball/97a7be984d588dfc60c12a41b7cf71ca7afd7233",
+                "reference": "97a7be984d588dfc60c12a41b7cf71ca7afd7233",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^9.5 || ^10.2"
+            },
+            "replace": {
+                "typo3-ter/crowdin": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "crowdin"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FriendsOfTYPO3\\Crowdin\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Georg Ringer",
+                    "email": "mail@ringer.it",
+                    "homepage": "https://www.ringer.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Crowdin integration for TYPO3",
+            "homepage": "https://github.com/FriendsOfTYPO3/crowdin",
+            "keywords": [
+                "crowdin",
+                "extension",
+                "localization",
+                "translation",
+                "typo3"
+            ],
+            "time": "2019-11-28T03:45:31+00:00"
         },
         {
             "name": "friendsoftypo3/frontend-editing",
@@ -6137,16 +6191,16 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6"
+                "reference": "9dc4f203e36f2b486149058bade43c851dd97451"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
-                "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/9dc4f203e36f2b486149058bade43c851dd97451",
+                "reference": "9dc4f203e36f2b486149058bade43c851dd97451",
                 "shasum": ""
             },
             "require": {
@@ -6154,6 +6208,7 @@
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
+                "phpstan/phpstan": "<0.12.20",
                 "vimeo/psalm": "<3.9.1"
             },
             "require-dev": {
@@ -6181,7 +6236,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2020-04-18T12:12:48+00:00"
+            "time": "2020-06-16T10:16:42+00:00"
         }
     ],
     "packages-dev": [],
