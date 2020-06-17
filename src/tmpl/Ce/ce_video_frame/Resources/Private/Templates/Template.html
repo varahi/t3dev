@@ -1,0 +1,17 @@
+<f:if condition="{data.header}">
+    <header>
+        <h2 class="ce-headline-center">{data.header}</h2>
+    </header>
+</f:if>
+
+<div class="responsive-video">
+    <f:if condition="{data.video_id}">
+        <figure class="video">
+            <iframe src="http://www.youtube.com/embed/{data.video_id}?wmode=transparent" width="640" height="480" frameborder="0"
+                    allowfullscreen></iframe>
+        </figure>
+    </f:if>
+    <f:if condition="{data.video_caption}">
+        <span class="responsive-video-caption"><f:format.raw>{data.video_caption}</f:format.raw></span>
+    </f:if>
+</div>

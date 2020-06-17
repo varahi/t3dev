@@ -11,7 +11,8 @@ page.includeCSS {
     //90_datepicker  = EXT:tmpl/Resources/Public/Styles/bootstrap-datepicker3.min.css
     100_fonts  = EXT:tmpl/Resources/Public/Styles/fonts/fonts.css
     110_style  = EXT:tmpl/Resources/Public/Styles/style.css
-    120_media_queries  = EXT:tmpl/Resources/Public/Styles/media_queries.css
+    120_codesnippet = EXT:tmpl/Resources/Public/CKeditor/Plugins/codesnippet/lib/highlight/styles/default.css
+    200_media_queries  = EXT:tmpl/Resources/Public/Styles/media_queries.css
 
     //130_search  = EXT:tmpl/Resources/Public/Styles/IndexedSearch.css
 
@@ -41,7 +42,8 @@ page.includeJSFooter {
     //110_datepicker_ru = EXT:tmpl/Resources/Public/JavaScript/bootstrap-datepicker.ru.min.js
     //120_gridfolio = EXT:tmpl/Resources/Public/JavaScript/jquery.wm-gridfolio-1.0.js
     //130_search = EXT:tmpl/Resources/Public/JavaScript/IndexedSearch.js
-    140_custom = EXT:tmpl/Resources/Public/JavaScript/custom.js
+    100_codesnippet = EXT:tmpl/Resources/Public/CKeditor/Plugins/codesnippet/lib/highlight/highlight.pack.js
+    200_custom = EXT:tmpl/Resources/Public/JavaScript/custom.js
 }
 
 # Maybe include some JS stuff rather in footer than in header

@@ -1,0 +1,17 @@
+tt_content.ce_video_frame = COA
+tt_content.ce_video_frame.20 = FLUIDTEMPLATE
+tt_content.ce_video_frame.20 {
+    templateName = Template
+    templateRootPaths.100 = EXT:tmpl/Ce/ce_video_frame/Resources/Private/Templates/
+    partialRootPaths.100 = EXT:tmpl/Ce/ce_video_frame/Resources/Private/Partials/
+    layoutRootPaths.100 = EXT:tmpl/Ce/ce_video_frame/Resources/Private/Layouts/
+
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = image
+            as = images
+        }
+    }
+
+}

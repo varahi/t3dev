@@ -5,4 +5,6 @@ $(function(){
   if ($("div.content").height() > 2500) {
     $(".content").addClass("content-height-2500");
   }
+
+  hljs.initHighlightingOnLoad();
 });

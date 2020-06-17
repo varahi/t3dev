@@ -8,5 +8,6 @@
 
 # Ce content elements
 ##############
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_video_frame/Configuration/TypoScript/" extensions="typoscript">
 #<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_mainpage_slider/Configuration/TypoScript/" extensions="ts">
 #<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_teaser_card/Configuration/TypoScript/" extensions="ts">

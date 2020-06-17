@@ -35,6 +35,23 @@
 			<trans-unit id="page.hide_breadcrumb">
 				<source><![CDATA[Hide breadcrumb]]></source>
 			</trans-unit>
+
+			<trans-unit id="ce.video_frame_title">
+				<source><![CDATA[Video Frame]]></source>
+			</trans-unit>
+			<trans-unit id="ce.video_frame_description">
+				<source><![CDATA[Responsive Video Frame]]></source>
+			</trans-unit>
+			<trans-unit id="ce.video_frame_wizard_title">
+				<source><![CDATA[Responsive Video Frame]]></source>
+			</trans-unit>
+			<trans-unit id="tt_content.video_id">
+				<source>Vimeo Video Id</source>
+			</trans-unit>
+			<trans-unit id="tt_content.video_caption">
+				<source>Vimeo Video Caption</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>
