@@ -11,4 +11,7 @@ CREATE TABLE pages (
 CREATE TABLE tt_content (
 	video_id varchar(255) DEFAULT '' NOT NULL,
 	video_caption varchar(255) DEFAULT '' NOT NULL,
+	cropscaling tinyint(3) DEFAULT '0' NOT NULL,
+    cropscaling_ratio varchar(100) DEFAULT '0' NOT NULL,
+    cropscaling_orient tinyint(3) DEFAULT '0' NOT NULL,
 );

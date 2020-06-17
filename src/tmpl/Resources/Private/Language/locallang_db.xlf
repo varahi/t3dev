@@ -5,6 +5,34 @@
 			<generator>LFEditor</generator>
 		</header>
 		<body>
+			<trans-unit id="tt_content.cropscaling_ratio">
+				<source><![CDATA[Cropscaling: Aspect Ratio]]></source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscaling_ratio.I.0">
+				<source><![CDATA[-]]></source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscaling_ratio.I.1">
+				<source><![CDATA[1:1]]></source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscaling_ratio.I.2">
+				<source><![CDATA[16:9]]></source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscaling_ratio.I.3">
+				<source><![CDATA[4:3]]></source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscaling_ratio.I.4">
+				<source><![CDATA[9:16]]></source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscaling_ratio.I.5">
+				<source><![CDATA[3:4]]></source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscalling">
+				<source><![CDATA[Cropscalling]]></source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscalling.I.0">
+				<source><![CDATA[Activated]]></source>
+			</trans-unit>
+
 			<trans-unit id="news.layout.list_news">
 				<source><![CDATA[List News]]></source>
 			</trans-unit>
