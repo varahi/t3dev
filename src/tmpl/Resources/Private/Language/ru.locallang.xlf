@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2020-06-14T12:03:48Z" product-name="tmpl">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2020-06-16T17:13:53Z" product-name="tmpl">
 		<header/>
 		<body>
 			<trans-unit id="ce.teaser_card.more">
@@ -44,7 +44,7 @@
 				<target>Подробнее...</target>
 			</trans-unit>
 			<trans-unit id="news.read_more">
-				<source><![CDATA[Read more]]></source>
+				<source>Подробнее...</source>
 				<target>Подробнее...</target>
 			</trans-unit>
 			<trans-unit id="news.author">

@@ -12,7 +12,7 @@ plugin.tx_news {
 		cssFile =
 
 		#Displays a dummy image if the news have no media items
-		displayDummyIfNoMedia = 1
+		displayDummyIfNoMedia = 0
 
 		# Output format
 		format = html
