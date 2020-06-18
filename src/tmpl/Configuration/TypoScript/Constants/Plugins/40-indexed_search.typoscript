@@ -4,9 +4,9 @@ plugin.tx_indexedsearch {
         targetPid = 29
     }
     view {
-        templateRootPath = EXT:tmpl/Resources/Private/Extensions/indexed_search/Templates/
-        partialRootPath = EXT:tmpl/Resources/Private/Extensions/indexed_search/Partials/
-        layoutRootPath = EXT:tmpl/Resources/Private/Extensions/indexed_search/Layouts/
+        templateRootPath = EXT:tmpl/Resources/Private/Extensions/indexed_search/Page/Templates/
+        partialRootPath = EXT:tmpl/Resources/Private/Extensions/indexed_search/Page/Partials/
+        layoutRootPath = EXT:tmpl/Resources/Private/Extensions/indexed_search/Page/Layouts/
     }
 }
 

@@ -887,3 +887,21 @@ small.error {
 #c99 .img-thumbnail {
   border: none;
 }
+
+/*
+.tx-indexedsearch-form .form-control {
+  max-width: 70%;
+}*/
+
+
+.tx-indexedsearch-searchbox {
+  margin-bottom: 10px;
+}
+.tx-indexedsearch-form {
+  float: left;
+  width: 70%;
+}
+.tx-indexedsearch-search-submit {
+  float: left;
+  margin-left: 10px;
+}

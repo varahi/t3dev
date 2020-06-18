@@ -17,10 +17,8 @@
             <f:form.hidden name="search[extendedSearch]" value="{searchParams.extendedSearch}" />
         </div>
         <fieldset>
-            <legend><f:translate key="form.legend" /></legend>
             <div class="tx-indexedsearch-form">
-                <label for="tx-indexedsearch-searchbox-sword"><f:translate key="form.searchFor" />:</label>
-                <f:form.textfield name="search[sword]" value="{sword}" id="tx-indexedsearch-searchbox-sword" class="tx-indexedsearch-searchbox-sword" />
+                <f:form.textfield name="search[sword]" value="{sword}" id="tx-indexedsearch-searchbox-sword" class="form-control" />
             </div>
             <f:if condition="{searchParams.extendedSearch}">
                 <f:if condition="{showTypeSearch}">
@@ -81,7 +79,8 @@
                 </f:if>
             </f:if>
             <div class="tx-indexedsearch-search-submit">
-                <f:form.submit name="search[submitButton]" value="{f:translate(key: 'form.submit')}" id="tx-indexedsearch-searchbox-button-submit" class="tx-indexedsearch-searchbox-button" />
+                <f:form.submit name="search[submitButton]" value="{f:translate(key: 'indexed_search.form.submit', extensionName: 'tmpl')}"
+                               id="tx-indexedsearch-searchbox-button-submit" class="btn btn-primary" />
             </div>
         </fieldset>
         <f:if condition="{settings.displayAdvancedSearchLink}">
