@@ -1,0 +1,12 @@
+plugin.tx_indexedsearch {
+    settings {
+        rootPidList = 1
+        targetPid = 29
+    }
+    view {
+        templateRootPath = EXT:tmpl/Resources/Private/Extensions/indexed_search/Templates/
+        partialRootPath = EXT:tmpl/Resources/Private/Extensions/indexed_search/Partials/
+        layoutRootPath = EXT:tmpl/Resources/Private/Extensions/indexed_search/Layouts/
+    }
+}
+

@@ -1,16 +1,16 @@
 <div class="main-wrapper">
     <!-- Begin page content -->
     <div class="container">
-        <f:render partial="Header" arguments="{_all}" />
+        <f:render partial="Header/Header" arguments="{_all}" />
         <div class="row">
             <div class="col-md-9">
-                <f:render partial="Subheader" arguments="{_all}" />
+                <f:render partial="Header/Subheader" arguments="{_all}" />
                 <f:comment>
                     <f:render partial="Share42" arguments="{_all}" />
                 </f:comment>
                 <div class="content content-inner">
                     <div class="text-area">
-                        <f:render partial="Breadcrumb" arguments="{_all}" />
+                        <f:render partial="Content/Breadcrumb" arguments="{_all}" />
                         <f:render section="section_content" />
                         <div class="clear"></div>
                     </div>
@@ -34,5 +34,5 @@
 
         </div>
     </div>
-    <f:render partial="Footer" arguments="{_all}" />
+    <f:render partial="Footer/Footer" arguments="{_all}" />
 </div>

@@ -60,6 +60,6 @@ page {
 # Favicons
 page.headerData.2039 = FLUIDTEMPLATE
 page.headerData.2039 {
-    file = EXT:tmpl/Resources/Private/Pages/Partials/Favicons.html
+    file = EXT:tmpl/Resources/Private/Pages/Partials/Page/Favicons.html
     extbase.controllerExtensionName = tmpl
 }
