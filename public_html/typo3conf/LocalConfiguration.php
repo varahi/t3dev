@@ -1,13 +1,13 @@
 <?php
 return [
     'BE' => [
-        'debug' => true,
+        'debug' => '1',
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=2$SmM5dzJtWWFpZldjNlBUVg$YtbyNVbfk51L3IXBhqmXHAkBbkheMaDxnRZXSv2uZeE',
         'interfaces' => 'backend, frontend',
         'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
-            'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
+            'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\BcryptPasswordHash',
             'options' => [],
         ],
     ],
@@ -143,7 +143,7 @@ return [
         ],
     ],
     'FE' => [
-        'debug' => true,
+        'debug' => '1',
         'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -151,17 +151,17 @@ return [
         ],
     ],
     'GFX' => [
-        'processor' => 'GraphicsMagick',
+        'processor' => 'ImageMagick',
         'processor_allowTemporaryMasksAsPng' => false,
-        'processor_colorspace' => 'RGB',
-        'processor_effects' => false,
+        'processor_colorspace' => 'sRGB',
+        'processor_effects' => true,
         'processor_enabled' => true,
         'processor_path' => '/usr/bin/',
         'processor_path_lzw' => '/usr/bin/',
     ],
     'MAIL' => [
         'transport' => 'sendmail',
-        'transport_sendmail_command' => '/usr/sbin/sendmail -t -i',
+        'transport_sendmail_command' => '/usr/sbin/sendmail -t -i ',
         'transport_smtp_encrypt' => '',
         'transport_smtp_password' => '',
         'transport_smtp_server' => '',
@@ -169,8 +169,27 @@ return [
     ],
     'SYS' => [
         'UTF8filesystem' => true,
+        'caching' => [
+            'cacheConfigurations' => [
+                'hash' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                ],
+                'imagesizes' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                ],
+                'pages' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                ],
+                'pagesection' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                ],
+                'rootline' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                ],
+            ],
+        ],
         'devIPmask' => '*',
-        'displayErrors' => 1,
+        'displayErrors' => '1',
         'encryptionKey' => '41803eb8cd8dace3986e4658530ab13735a1992ebd21a3d966c14a10d543b66c470c62517df23f446e08f2fcaad9288a',
         'exceptionalErrors' => 12290,
         'features' => [
