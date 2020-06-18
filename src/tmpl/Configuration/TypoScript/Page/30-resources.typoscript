@@ -4,27 +4,14 @@ page.includeCSS {
     20_bootstrap  = EXT:tmpl/Resources/Public/Styles/bootstrap.css
     30_bootstrap_theme  = EXT:tmpl/Resources/Public/Styles/bootstrap-theme.min.css
     40_smartmenu  = EXT:tmpl/Resources/Public/Styles/jquery.smartmenus.bootstrap.css
-    //50_lightbox  = EXT:tmpl/Resources/Public/Styles/jquery.lightbox.min.css
-    //60_magnific_popup  = EXT:tmpl/Resources/Public/Styles/magnific-popup.css
-    //70_validation  = EXT:tmpl/Resources/Public/Styles/validationEngine.jquery.css
-    //80_gridfolio  = EXT:tmpl/Resources/Public/Styles/jquery.wm-gridfolio-1.0.css
-    //90_datepicker  = EXT:tmpl/Resources/Public/Styles/bootstrap-datepicker3.min.css
     100_fonts  = EXT:tmpl/Resources/Public/Styles/fonts/fonts.css
     110_style  = EXT:tmpl/Resources/Public/Styles/style.css
     120_codesnippet = EXT:tmpl/Resources/Public/CKeditor/Plugins/codesnippet/lib/highlight/styles/default.css
     200_media_queries  = EXT:tmpl/Resources/Public/Styles/media_queries.css
-
-    //130_search  = EXT:tmpl/Resources/Public/Styles/IndexedSearch.css
-
-    # SCSS
-    #100_style = EXT:tmpl/Resources/Public/Scss/style.scss
-    #100_style.outputdir = EXT:tmpl/Resources/Public/CompiledCss/
-    #200_media_queries = EXT:tmpl/Resources/Public/Styles/media_queries.css
 }
 
 page.includeJS {
-  #  10_modernizr = EXT:tmpl/Resources/Public/js/modernizr-2.6.2.min.js
-  #  20_respond = EXT:tmpl/Resources/Public/js/respond.min.js
+    10_vk_js = http://vk.com/js/api/openapi.js?136
 }
 
 # manually inserted JavaScript files
@@ -34,14 +21,6 @@ page.includeJSFooter {
     30_bootstrap = EXT:tmpl/Resources/Public/JavaScript/bootstrap.min.js
     40_smartmenu = EXT:tmpl/Resources/Public/JavaScript/jquery.smartmenus.min.js
     50_smartmenu_bootstrap = EXT:tmpl/Resources/Public/JavaScript/jquery.smartmenus.bootstrap.min.js
-    //60_lightbox = EXT:tmpl/Resources/Public/JavaScript/jquery.lightbox.min.js
-    //70_validation = EXT:tmpl/Resources/Public/JavaScript/jquery.validationEngine.js
-    //80_validation_ru = EXT:tmpl/Resources/Public/JavaScript/jquery.validationEngine-ru.js
-    //90_maginific_popup = EXT:tmpl/Resources/Public/JavaScript/jquery.magnific-popup.min.js
-    //100_datepicker = EXT:tmpl/Resources/Public/JavaScript/bootstrap-datepicker.min.js
-    //110_datepicker_ru = EXT:tmpl/Resources/Public/JavaScript/bootstrap-datepicker.ru.min.js
-    //120_gridfolio = EXT:tmpl/Resources/Public/JavaScript/jquery.wm-gridfolio-1.0.js
-    //130_search = EXT:tmpl/Resources/Public/JavaScript/IndexedSearch.js
     100_codesnippet = EXT:tmpl/Resources/Public/CKeditor/Plugins/codesnippet/lib/highlight/highlight.pack.js
     200_custom = EXT:tmpl/Resources/Public/JavaScript/custom.js
 }

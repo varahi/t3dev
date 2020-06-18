@@ -5,9 +5,7 @@
         <div class="row">
             <div class="col-md-9">
                 <f:render partial="Header/Subheader" arguments="{_all}" />
-                <f:comment>
-                    <f:render partial="Share42" arguments="{_all}" />
-                </f:comment>
+                <!-- Share 42 -->
                 <div class="content content-inner">
                     <div class="text-area">
                         <f:render partial="Content/Breadcrumb" arguments="{_all}" />
@@ -16,22 +14,11 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-md-3 col-sm-offset-0 right-column">
                 <f:cObject typoscriptObjectPath="lib.sideMenu" />
                 <f:cObject typoscriptObjectPath="lib.lastNews" />
-
-                <f:comment>
-                    <div id="vk_groups" style="width: 250px; height: 450px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;">
-                        <iframe name="fXDad674" src="https://vk.com/widget_community.php?app=0&amp;width=250px&amp;_ver=1&amp;gid=22546731&amp;mode=0&amp;color1=&amp;color2=&amp;color3=&amp;class_name=&amp;height=450&amp;url=http%3A%2F%2Ftypo3.ru.net%2Fcompany%2Fabout&amp;referrer=http%3A%2F%2Ftypo3.ru.net%2Fsearch&amp;title=%C2%AB%D0%A23%20%D0%A1%D1%82%D1%83%D0%B4%D0%B8%D1%8F%C2%BB%20-%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%BD%D0%B0%20TYPO3%20CMS%20%D0%B8%20Neos%20CMS&amp;1729e73bd99" scrolling="no" id="vkwidget1" style="overflow: hidden; height: 450px;" width="250" height="450" frameborder="0"></iframe>
-                    </div>
-                    <script type="text/javascript">
-                        VK.Widgets.Group("vk_groups", {mode: 0, width: "250", height: "450"}, 22546731);
-                    </script>
-                    <br />
-                </f:comment>
+                <f:cObject typoscriptObjectPath="lib.vkGroup" />
             </div>
-
         </div>
     </div>
     <f:render partial="Footer/Footer" arguments="{_all}" />

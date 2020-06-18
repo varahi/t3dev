@@ -4,7 +4,7 @@ page.meta {
     viewport = width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0
     //description = TEXT
     //description.data = field:description // field:abstract // levelfield :-1, description, slide // levelfield :-1, abstract, slide
-    //robots              = index,follow
+    robots              = index,follow
     //robots               = noindex,nofollow
 
     //cmsmagazine = 873b6525651ddbae70a7fa679176ff0d
