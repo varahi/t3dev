@@ -63,6 +63,9 @@
 			<trans-unit id="indexed_search.form.submit">
 				<source>Искать</source>
 			</trans-unit>
+			<trans-unit id="indexed_search.result.noResult">
+				<source>Результатов не найдено</source>
+			</trans-unit>
 			<trans-unit id="indexed_search.displayResults" resname="displayResults">
 				<source><![CDATA[Показаны результаты <strong>%1$s из %2$s</strong> всего <strong>%3$s</strong>]]></source>
 			</trans-unit>

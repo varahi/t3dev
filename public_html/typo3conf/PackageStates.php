@@ -56,6 +56,9 @@ return [
         'backend' => [
             'packagePath' => 'typo3/sysext/backend/',
         ],
+        'indexed_search' => [
+            'packagePath' => 'typo3/sysext/indexed_search/',
+        ],
         'setup' => [
             'packagePath' => 'typo3/sysext/setup/',
         ],

@@ -58,6 +58,7 @@
 		"typo3/cms-form": "~10.4.0",
 		"typo3/cms-frontend": "~10.4.0",
 		"typo3/cms-impexp": "~10.4.0",
+		"typo3/cms-indexed-search": "^10.4",
 		"typo3/cms-info": "~10.4.0",
 		"typo3/cms-install": "~10.4.0",
 		"typo3/cms-linkvalidator": "^10.4.0",

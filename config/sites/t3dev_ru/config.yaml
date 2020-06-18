@@ -21,8 +21,7 @@ languages:
     hreflang: ru-RU
     direction: ''
     flag: ru
-    websiteTitle: ''
-    solr_core_read: pruzzenland_de
+#    websiteTitle: ''
 rootPageId: 1
 routeEnhancers:
   NewsPlugin:
@@ -31,7 +30,7 @@ routeEnhancers:
     plugin: Pi1
     routes:
       -
-        routePath: '/detail/{news_title}'
+        routePath: '/{news_title}'
         _controller: 'News::detail'
         _arguments:
           news_title: news
@@ -63,11 +62,3 @@ routes:
     route: robots.txt
     type: staticText
     content: "User-agent: *\r\nDisallow: /*?id=*\r\nDisallow: /fileadmin/_temp_/\r\nDisallow: /fileadmin/_migrated/\r\nDisallow: /fileadmin/templates/\r\nDisallow: /typo3/\r\nDisallow: /typo3temp/\r\nDisallow: /typo3conf/\r\nDisallow: /uploads/\r\nDisallow: /sxd/\r\nDisallow: /webstat/\r\nHost: t3dev.ru\r\nSitemap: http://t3dev.ru/sitemap.xml\r\n"
-solr_enabled_read: true
-solr_host_read: 172.17.0.1
-solr_path_read: /solr/
-solr_port_read: '8983'
-solr_scheme_read: http
-solr_use_write_connection: false
-txCsseoXdefault: 0
-websiteTitle: ''
