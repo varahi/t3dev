@@ -905,3 +905,7 @@ small.error {
   float: left;
   margin-left: 10px;
 }
+
+.actions .btn {
+    margin-top: 10px;
+}
