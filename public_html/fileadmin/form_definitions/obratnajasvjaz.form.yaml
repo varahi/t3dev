@@ -130,3 +130,9 @@ renderables:
               minimum: '10'
               maximum: '10000'
             identifier: StringLength
+      -
+        label: 'Элемент содержимого'
+        properties:
+          contentElementUid: '119'
+        type: ContentElement
+        identifier: contentelement-1
