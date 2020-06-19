@@ -11,3 +11,24 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_video_frame/Configuration/TypoScript/" extensions="typoscript">
 #<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_mainpage_slider/Configuration/TypoScript/" extensions="ts">
 #<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_teaser_card/Configuration/TypoScript/" extensions="ts">
+
+
+plugin.tx_cookieman._LOCAL_LANG.de {
+    heading = Уведомление об использовании cookies
+    dataProtectionDeclaration = политике о кнфиденциальности
+    imprint = согласии на обработку персональных данных
+    deny = Отклонить куки
+    accept = Принять куки
+    settings = Настройки
+    group.mandatory = требуется
+    save = Сохранить
+    group.mandatory.desc = Эти файлы cookie необходимы для правильной работы нашего веб-сайта.
+    trackingobject.CookieConsent.desc = Хранит ваше согласие на использование куки.
+    tableheader.purpose = Цель
+    tableheader.duration = Время жизни
+    duration.year = Год
+    tableheader.provider = Провайдер
+    tableheader.type = Тип
+    tableheader.name = Имя
+    introText = Наш сайт использует куки. Они имеют две функции: во-первых, они необходимы для основной функциональности нашего сайта. С другой стороны, мы можем использовать куки для постоянного улучшения нашего контента для вас. Для этого собираются и оцениваются псевдонимные данные от посетителей сайта. Вы можете отозвать свое согласие на использование куки в любое время. Дополнительную информацию о файлах cookie на этом сайте можно найти в нашей %1$s и в %2$s
+}

@@ -16,3 +16,6 @@ call_user_func(
         );
     }
 );
+
+# Override lang constants for EXT:cookieman
+#$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['EXT:cookieman/Resources/Private/Language/de.locallang.xlf'][] = 'EXT:tmpl/Resources/Private/Language/de.locallang.xlf';

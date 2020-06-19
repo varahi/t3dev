@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="Frontend" date="2019-10-28T12:20:51Z" product-name="cookieman" target-language="ru">
+        <header/>
+        <body>
+            <trans-unit id="heading" resname="heading" approved="yes">
+                <source>About Cookies</source>
+                <target state="final">Уведомление об использовании cookies</target>
+            </trans-unit>
+            <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration" approved="yes">
+                <source>политике о кнфиденциальности</source>
+            </trans-unit>
+            <trans-unit id="imprint" resname="imprint" approved="yes">
+                <source>согласии на обработку персональных данных</source>
+            </trans-unit>
+            <trans-unit id="introText" resname="introText" approved="yes">
+                <source>Наш сайт использует куки. Они имеют две функции: во-первых, они необходимы для основной функциональности нашего сайта. С другой стороны, мы можем использовать куки для постоянного улучшения нашего контента для вас. Для этого собираются и оцениваются псевдонимные данные от посетителей сайта. Вы можете отозвать свое согласие на использование куки в любое время. Дополнительную информацию о файлах cookie на этом сайте можно найти в нашей %1$s and regarding us on the %2$s</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

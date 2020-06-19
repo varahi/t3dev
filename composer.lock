@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c331ec55466e6df3dd0c83a9737903e",
+    "content-hash": "73105a313964262d53735bf5dac77e39",
     "packages": [
         {
             "name": "clickstorm/cs_seo",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/clickstorm/cs_seo.git",
-                "reference": "fde6aa5f8f8fcee684bb88894733e65bfc0b39a1"
+                "reference": "24fe0fc81496bbd434d17a1232ad6c723c164e78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clickstorm/cs_seo/zipball/fde6aa5f8f8fcee684bb88894733e65bfc0b39a1",
-                "reference": "fde6aa5f8f8fcee684bb88894733e65bfc0b39a1",
+                "url": "https://api.github.com/repos/clickstorm/cs_seo/zipball/24fe0fc81496bbd434d17a1232ad6c723c164e78",
+                "reference": "24fe0fc81496bbd434d17a1232ad6c723c164e78",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 "seo",
                 "typo3"
             ],
-            "time": "2020-06-18T10:07:08+00:00"
+            "time": "2020-06-19T12:25:49+00:00"
         },
         {
             "name": "cogpowered/finediff",
@@ -141,6 +141,72 @@
                 "symlink": true,
                 "relative": true
             }
+        },
+        {
+            "name": "dmind/cookieman",
+            "version": "2.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmind-gmbh/extension-cookieman.git",
+                "reference": "ad0a9a75a9f1887884cfa8f907e4364f8e157f44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmind-gmbh/extension-cookieman/zipball/ad0a9a75a9f1887884cfa8f907e4364f8e157f44",
+                "reference": "ad0a9a75a9f1887884cfa8f907e4364f8e157f44",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "typo3/cms-core": "^10.0 || dev-master"
+            },
+            "require-dev": {
+                "bk2k/bootstrap-package": "^11.0",
+                "bk2k/extension-helper": "^1.0",
+                "browserstack/browserstack-local": "dev-master",
+                "codeception/codeception": "^3.1",
+                "dmind/cookieman-test": "@dev",
+                "dmind/cookieman-test-bootstrap3-banner": "@dev",
+                "dmind/cookieman-test-bootstrap3-modal": "@dev",
+                "dmind/cookieman-test-bootstrap4-modal": "@dev",
+                "dmind/cookieman-test-customtheme": "@dev",
+                "ergebnis/composer-normalize": "^2.3",
+                "friendsofphp/php-cs-fixer": "^2.14",
+                "helhum/typo3-console": "^5.8",
+                "php-coveralls/php-coveralls": "^2.1",
+                "roave/security-advisories": "dev-master",
+                "typo3/cms-introduction": "dev-master",
+                "typo3/cms-tstemplate": "^10.0 || dev-master",
+                "typo3/testing-framework": "^6.2"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "cookieman",
+                    "web-dir": ".build/public",
+                    "app-dir": ".build"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dmind\\Cookieman\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jonas Eberle",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. It also removes cookies after the consent has been revoked. Notice: Supports TYPO3v8/v9/v10, but each unique version only supports one!",
+            "time": "2020-06-12T16:36:02+00:00"
         },
         {
             "name": "doctrine/annotations",

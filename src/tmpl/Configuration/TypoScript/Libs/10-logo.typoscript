@@ -13,6 +13,6 @@ lib.logo {
         #stdWrap.typolink.ATagParams = class=""
         params = class="logo"
         stdWrap.wrap = |
-        stdWrap.typolink.title = {$config.page.header.logoTitle}
+        stdWrap.typolink.title = {$config.header.logoTitle}
     }
 }

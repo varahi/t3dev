@@ -1,0 +1,7 @@
+plugin.tx_cookieman {
+    settings {
+        links.dataProtectionDeclarationPid = 30
+        links.imprintPid = 31
+        theme = bootstrap3-modal
+    }
+}

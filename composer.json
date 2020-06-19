@@ -31,6 +31,7 @@
 	"require": {
 		"clickstorm/cs_seo": "dev-master",
 		"configloader/configloader": "^10.4",
+		"dmind/cookieman": "^2.5",
 		"fluidtypo3/vhs": "dev-master",
 		"friendsoftypo3/crowdin": "^1.0",
 		"friendsoftypo3/frontend-editing": "dev-master",
