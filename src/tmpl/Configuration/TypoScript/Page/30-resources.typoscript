@@ -11,15 +11,16 @@ page.includeCSS {
 }
 
 page.includeJS {
-    10_jquery = https://code.jquery.com/jquery-2.2.4.min.js
-    20_jquery_ui = http://code.jquery.com/ui/1.9.2/jquery-ui.min.js
+    #10_jquery = https://code.jquery.com/jquery-2.2.4.min.js
+    #10_jquery = http://code.jquery.com/jquery-1.11.0.min.js
+    #20_jquery_ui = http://code.jquery.com/ui/1.9.2/jquery-ui.min.js
     30_vk_js = http://vk.com/js/api/openapi.js?136
 }
 
 # manually inserted JavaScript files
 page.includeJSFooter {
-    #10_jquery = http://code.jquery.com/jquery-1.11.0.min.js
-    #20_jquery_ui = http://code.jquery.com/ui/1.9.2/jquery-ui.min.js
+    10_jquery = http://code.jquery.com/jquery-1.11.0.min.js
+    20_jquery_ui = http://code.jquery.com/ui/1.9.2/jquery-ui.min.js
     30_bootstrap = EXT:tmpl/Resources/Public/JavaScript/bootstrap.min.js
     40_smartmenu = EXT:tmpl/Resources/Public/JavaScript/jquery.smartmenus.min.js
     50_smartmenu_bootstrap = EXT:tmpl/Resources/Public/JavaScript/jquery.smartmenus.bootstrap.min.js

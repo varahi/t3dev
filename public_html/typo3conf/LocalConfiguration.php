@@ -1,7 +1,7 @@
 <?php
 return [
     'BE' => [
-        'debug' => '1',
+        'debug' => false,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=2$SmM5dzJtWWFpZldjNlBUVg$YtbyNVbfk51L3IXBhqmXHAkBbkheMaDxnRZXSv2uZeE',
         'interfaces' => 'backend, frontend',
@@ -143,7 +143,7 @@ return [
         ],
     ],
     'FE' => [
-        'debug' => '1',
+        'debug' => false,
         'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -158,6 +158,21 @@ return [
         'processor_enabled' => true,
         'processor_path' => '/usr/bin/',
         'processor_path_lzw' => '/usr/bin/',
+    ],
+    'LOG' => [
+        'TYPO3' => [
+            'CMS' => [
+                'deprecations' => [
+                    'writerConfiguration' => [
+                        'notice' => [
+                            'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
+                                'disabled' => true,
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'MAIL' => [
         'transport' => 'sendmail',
@@ -188,10 +203,10 @@ return [
                 ],
             ],
         ],
-        'devIPmask' => '*',
-        'displayErrors' => '1',
+        'devIPmask' => '',
+        'displayErrors' => 0,
         'encryptionKey' => '41803eb8cd8dace3986e4658530ab13735a1992ebd21a3d966c14a10d543b66c470c62517df23f446e08f2fcaad9288a',
-        'exceptionalErrors' => 12290,
+        'exceptionalErrors' => 4096,
         'features' => [
             'felogin.extbase' => true,
             'fluidBasedPageModule' => true,

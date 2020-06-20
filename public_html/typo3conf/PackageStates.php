@@ -110,9 +110,6 @@ return [
         'frontend_editing' => [
             'packagePath' => 'typo3conf/ext/frontend_editing/',
         ],
-        'cookieman' => [
-            'packagePath' => 'typo3conf/ext/cookieman/',
-        ],
         'crowdin' => [
             'packagePath' => 'typo3conf/ext/crowdin/',
         ],
