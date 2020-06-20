@@ -2,14 +2,15 @@ page.meta {
     X-UA-Compatible = IE=edge
     X-UA-Compatible.httpEquivalent = 1
     viewport = width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0
+
     //description = TEXT
     //description.data = field:description // field:abstract // levelfield :-1, description, slide // levelfield :-1, abstract, slide
     robots              = index,follow
     //robots               = noindex,nofollow
 
-    //cmsmagazine = 873b6525651ddbae70a7fa679176ff0d
-    //yandex-verification =
+    cmsmagazine = 873b6525651ddbae70a7fa679176ff0d
+    yandex-verification = 67508a43d56392c8
     //verify-reformal =
-    //google-site-verification =
+    google-site-verification = D7JEDVfYgJyv92wOTom49wN8-9jCh0rx-DbfISftGPI
 
 }

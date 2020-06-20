@@ -49,6 +49,11 @@ lib.subheader {
         1 {
             value = {$config.subheader.phone1}
         }
+        2 = TEXT
+        2 {
+            wrap = <br />|
+            value = {$config.subheader.phone2}
+        }
     }
 }
 
