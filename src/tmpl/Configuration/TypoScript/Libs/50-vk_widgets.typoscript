@@ -14,7 +14,6 @@ lib.vkCommunityMessage {
     <!-- VK Widget -->
     <div id="vk_community_messages"></div>
     <script type="text/javascript">
-        //VK.Widgets.CommunityMessages("vk_community_messages", 22546731, {});
         VK.Widgets.CommunityMessages("vk_community_messages", 22546731, {expanded: "0",tooltipButtonText: "Есть вопрос?"});
     </script>
     )
